@@ -1,0 +1,44 @@
+body{
+    background-color: #eeeeee;
+    margin-top: 60px;
+}
+
+
+#logo{
+    width: 150px;
+    height: 50px;
+}
+
+#searchBox{
+    width: 300px;
+}
+
+#left-side-pane{
+    box-shadow: 0 0 0 1px rgba(0,0,0,.1);
+    background-color: #fff;
+    padding: 10px;
+}
+
+#left-side-pane img{
+    width: 100px;
+    height: 100px;
+}
+
+#left-side-pane li{
+    border-bottom: 1px solid black;
+    padding: 10px 0px;
+}
+
+.question{
+    
+}
+
+
+#tester {
+    position: absolute;
+    right: 20px;
+    top: 0px;
+    height: 200px;
+    width: 100px;
+    background: red;
+}
