@@ -19,6 +19,12 @@ body{
     padding: 10px;
 }
 
+.sticky-top-custom{
+    position: sticky;
+    top: 60px;
+    z-index: 1030;
+}
+
 #left-side-pane img{
     width: 100px;
     height: 100px;
@@ -30,14 +36,20 @@ body{
 }
 
 .question{
-    
+      box-shadow: 0 0 0 1px rgba(0,0,0,.1);
+      padding: 10px;
+      background-color: #fff;
+      margin-bottom:10px;
+      border-radius: 2px 2px;
 }
 
+.thumnbnail-img{
+    width: 30px;
+    height: 30px;
+}
 
 #tester {
-    position: absolute;
-    right: 20px;
-    top: 0px;
+   
     height: 200px;
     width: 100px;
     background: red;
