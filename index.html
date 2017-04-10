@@ -1,96 +1,69 @@
-<!DOCTYPE html>
+﻿<!doctype html>
 <html lang="en">
 
 <head>
-	<meta charset="utf-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-
-	<title>My Poll - Your Opinion Matters</title>
-
-	<meta name="description" content="Source code generated using layoutit.com">
-	<meta name="author" content="LayoutIt!">
-
-	<link href="css/bootstrap.min.css" rel="stylesheet">
-	
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>My Poll - You Opinion matter</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ"
+	 crossorigin="anonymous">
 	<link href="css/style.css" rel="stylesheet">
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 
 <body>
-	<!-- Container-fluid End -->
-	<div class="container-fluid">
-		<!-- navigation bar -->
+	<nav class="navbar navbar-toggleable-md navbar-light bg-faded fixed-top">
+		<button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+		 aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+		<div class="container">
+			<a class="navbar-brand" href="#">Navbar</a>
+			<div class="collapse navbar-collapse" id="navbarSupportedContent">
 
-		<div class="row">
-			<div class="col-md-12">
-				<nav class="navbar navbar-default navbar-fixed-top" role="navigation">
-					<div class="navbar-header col-md-offset-1 col-md-2" id="headerLogo">
+				<form class="form-inline my-2 my-lg-0 mr-auto">
+					<input class="form-control mr-sm-2 input-group-lg" type="text" id="searchBox" placeholder="Search">
+					<button class="btn btn-outline-success my-2 my-sm-0" type="button" data-toggle="modal" data-target="#emyModal">Create Poll</button>
+				</form>
 
-						<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-						 		<span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span>
-							</button>
+				<ul class="navbar-nav">
+					<li class="nav-item">
+						<a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="#">Link</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="#">Disabled</a>
+					</li>
+				</ul>
 
-						<a class="" href="#"><img src="opinion.png" id="logo" alt="Home"></a>
-
+				<div class="nav-item dropdown">
+					<a class="nav-link dropdown-toggle" href="http://example.com" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true"
+					 aria-expanded="false"><i class="fa fa-user-circle" aria-hidden="true"></i>&nbsp;Mitin</a>
+					<div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+						<a class="dropdown-item" href="#"><i class="fa fa-user-circle" aria-hidden="true"></i> &nbsp;Account</a>
+						<a class="dropdown-item" href="#"><i class="fa fa-cog" aria-hidden="true"></i> &nbsp;Settings</a>
+						<a class="dropdown-item" href="#"><i class="fa fa-comment-o" aria-hidden="true"></i> &nbsp;Feedback</a>
+						<div class="dropdown-divider"></div>
+						<a class="dropdown-item" href="#"><i class="fa fa-sign-out" aria-hidden="true"></i>&nbsp;Logout</a>
 					</div>
-					<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-						<form class="navbar-form navbar-left" role="search">
-							<div class="form-group">
-								<input type="text" id="searchBox" class="form-control">
-							</div>
-							<button type="submit" class="btn btn-default">
-							Submit
-						</button>
-						</form>
-						<ul class="nav navbar-nav col-md-2 pull-right">
-							<li class="dropdown ">
-								<a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-user-circle-o" aria-hidden="true"></i> &nbsp;Mitin<strong class="caret"></strong></a>
-								<ul class="dropdown-menu">
-									<li>
-										<a href="#">Action</a>
-									</li>
-									<li>
-										<a href="#">Another action</a>
-									</li>
-									<li>
-										<a href="#">Something else here</a>
-									</li>
-									<li class="divider">
-									</li>
-									<li>
-										<a href="#">Separated link</a>
-									</li>
-									<li class="divider">
-									</li>
-									<li>
-										<a href="#">Logout</a>
-									</li>
-								</ul>
-							</li>
-						</ul>
-					</div>
-
-				</nav>
+				</div>
 			</div>
 		</div>
+	</nav>
 
-		<!-- navigation bar end -->
-
-		<!-- Main body -->
+	<div class="container">
 		<div class="row">
-
 			<!-- Prfile Area -->
-			<div class="col-md-2 col-md-offset-1">
-
-				<div id="left-side-pane" class="sticky-top">
+			<div>
+				<div id="left-side-pane" class="sticky-top-custom">
 					<div style="text-align: center; display: block;">
-						<img alt="Bootstrap Image Preview" src="pp.png" id="profilePic" class="img-circle" /></br>
+						<img src="pp.png" class="rounded-circle" alt="">
 						<h5>Mitin Dixit</h5>
 					</div>
-
 					<div class="quickLinks">
-
 						<ul class="list-unstyled">
 							<li>
 								Lorem ipsum dolor sit amet
@@ -106,150 +79,159 @@
 							</li>
 						</ul>
 					</div>
-
 				</div>
 			</div>
 			<!-- Prfile Area End-->
-
 			<!-- Main Feed Area -->
-			<div class="col-md-5">
-
+			<div class="col-md-6">
 				<div class="question">
-					<h4>
-						Is Aditya Yogi right Option as a CM of UP?
-					</h4>
-					<p>
-						Since he not the Right person to carry on the features of all the time can he be CM of UP ?
-					</p>
-					<p>
-						
-					</p>
-				</div>
-
-				<div class="question">
-					<h2>
-						Hello, world!
-					</h2>
-					<p>
-						This is a template for a simple marketing or informational website. It includes a large callout called the hero unit and
-						three supporting pieces of content. Use it as a starting point to create something more unique.
-					</p>
-					<p>
-						<a class="btn btn-primary btn-large" href="#">Learn more</a>
-					</p>
-				</div>
-
-				<div class="question">
-					<h2>
-						Hello, world!
-					</h2>
-					<p>
-						This is a template for a simple marketing or informational website. It includes a large callout called the hero unit and
-						three supporting pieces of content. Use it as a starting point to create something more unique.
-					</p>
-					<p>
-						<a class="btn btn-primary btn-large" href="#">Learn more</a>
-					</p>
-				</div>
-
-				<div class="question">
-					<h2>
-						Hello, world!
-					</h2>
-					<p>
-						This is a template for a simple marketing or informational website. It includes a large callout called the hero unit and
-						three supporting pieces of content. Use it as a starting point to create something more unique.
-					</p>
-					<p>
-						<a class="btn btn-primary btn-large" href="#">Learn more</a>
-					</p>
-				</div>
-			</div>
-			<!-- Main Feed Area -->
-
-			<!-- Related Search Area -->
-			<div class="col-md-3">
-				<!-- Button trigger modal -->
-				<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#modelId">
-						  Launch
-						</button>
-
-				<!-- Modal -->
-				<div class="modal fade" id="modelId" tabindex="-1" role="dialog" aria-labelledby="modelTitleId" aria-hidden="true">
-					<div class="modal-dialog" role="document">
-						<div class="modal-content">
-							<div class="modal-header">
-								<button type="button" class="close" data-dismiss="modal" aria-label="Close">
-								  <span aria-hidden="true">&times;</span>
-								</button>
-								<h4 class="modal-title" id="modelTitleId">Header</h4>
-							</div>
-							<div class="modal-body">
-								<div class="container-fluid">
-
-									<div class="form-group">
-										<label for="questionTbx">Question</label>
-										<textarea class="form-control " name="questionTbx" id="questionTbx" rows="1"></textarea>
-									</div>
-
-
-									<div class="form-group">
-										<label for="catId">Category</label>
-										<select class="form-control form-control-sm" name="catId" id="catId">
-												<option>Entertainment</option>
-												<option>Education</option>
-												<option>Health</option>
-											  </select>
-									</div>
-
-									<div class="form-group">
-										<label for="">Option</label>
-										<input type="text" class="form-control form-control-lg" name="" id="" placeholder="Option">
-									</div>
-									b4-ty
-
-								</div>
-							</div>
-							<div class="modal-footer">
-								<button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-								<button type="button" class="btn btn-primary">Save</button>
-							</div>
+					<div class="media">
+						<img class="d-flex align-self-start mr-3 thumnbnail-img" src="abhi.jpg" alt="Generic placeholder image">
+						<div class="media-body">
+							<h5 class="mt-0">Top-aligned media</h5>
+							<p>
+								Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin. Cras purus odio, vestibulum in
+								vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis
+								in faucibus.
+							</p>
+							<p>
+								Donec sed odio dui. Nullam quis risus eget urna mollis ornare vel eu leo. Cum sociis natoque penatibus et magnis dis parturient
+								montes, nascetur ridiculus mus.
+							</p>
 						</div>
 					</div>
 				</div>
+				<div class="question">
+					<div class="media">
+						<img class="d-flex align-self-start mr-3 thumnbnail-img" src="su.jpg" alt="Generic placeholder image">
+						<div class="media-body">
+							<h5 class="mt-0">Top-aligned media</h5>
+							<p>
+								Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin. Cras purus odio, vestibulum in
+								vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis
+								in faucibus.
+							</p>
+							<p>
+								Donec sed odio dui. Nullam quis risus eget urna mollis ornare vel eu leo. Cum sociis natoque penatibus et magnis dis parturient
+								montes, nascetur ridiculus mus.
+							</p>
+						</div>
+					</div>
+				</div>
+				<div class="question">
+					<div class="media">
+						<img class="d-flex align-self-start mr-3 thumnbnail-img" src="pp.png" alt="Generic placeholder image">
+						<div class="media-body">
+							<h5 class="mt-0">Top-aligned media</h5>
+							<p>
+								Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin. Cras purus odio, vestibulum in
+								vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis
+								in faucibus.
+							</p>
+							<p>
+								Donec sed odio dui. Nullam quis risus eget urna mollis ornare vel eu leo. Cum sociis natoque penatibus et magnis dis parturient
+								montes, nascetur ridiculus mus.
+							</p>
+						</div>
+					</div>
+				</div>
+				<div class="question">
+					<div class="media">
+						<img class="d-flex align-self-start mr-3 thumnbnail-img" src="su.jpg" alt="Generic placeholder image">
+						<div class="media-body">
+							<h5 class="mt-0">Top-aligned media</h5>
+							<p>
+								Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin. Cras purus odio, vestibulum in
+								vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis
+								in faucibus.
+							</p>
+							<p>
+								Donec sed odio dui. Nullam quis risus eget urna mollis ornare vel eu leo. Cum sociis natoque penatibus et magnis dis parturient
+								montes, nascetur ridiculus mus.
+							</p>
+						</div>
+					</div>
+				</div>
+				<div class="question">
+					<div class="media">
+						<img class="d-flex align-self-start mr-3 thumnbnail-img" src="pp.png" alt="Generic placeholder image">
+						<div class="media-body">
+							<h5 class="mt-0">Top-aligned media</h5>
+							<p>
+								Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin. Cras purus odio, vestibulum in
+								vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis
+								in faucibus.
+							</p>
+							<p>
+								Donec sed odio dui. Nullam quis risus eget urna mollis ornare vel eu leo. Cum sociis natoque penatibus et magnis dis parturient
+								montes, nascetur ridiculus mus.
+							</p>
+						</div>
+					</div>
+				</div>
+				<div class="question">
+					<div class="media">
+						<img class="d-flex align-self-start mr-3 thumnbnail-img" src="pp.png" alt="Generic placeholder image">
+						<div class="media-body">
+							<h5 class="mt-0">Top-aligned media</h5>
+							<p>
+								Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin. Cras purus odio, vestibulum in
+								vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis
+								in faucibus.
+							</p>
+							<p>
+								Donec sed odio dui. Nullam quis risus eget urna mollis ornare vel eu leo. Cum sociis natoque penatibus et magnis dis parturient
+								montes, nascetur ridiculus mus.
+							</p>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- Main Feed Area -->
+			<!-- Related Search Area -->
+			<div>
+				<div id="right-side-pane" class="sticky-top-custom">
 
 
-				<script>
-					$('#exampleModal').on('show.bs.modal', event => {
-						var button = $(event.relatedTarget);
-						var modal = $(this);
-						// Use above variables to manipulate the DOM
 
-					});
-				</script>
-
+				</div>
 			</div>
 			<!-- Related Search Area -->
-
 		</div>
-		<!-- Main body End -->
-
 	</div>
-	<!-- Container-fluid End -->
-	<script src="js/jquery.min.js"></script>
-	<script src="js/bootstrap.min.js"></script>
-	<script src="js/scripts.js"></script>
+
+	<div class="modal fade" id="emyModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+		<div class="modal-dialog" role="document">
+			<div class="modal-content">
+				<div class="modal-header">
+					<h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+										<span aria-hidden="true">&times;</span>
+										</button>
+				</div>
+				<div class="modal-body">
+					...
+				</div>
+				<div class="modal-footer">
+					<button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+					<button type="button" class="btn btn-primary">Save changes</button>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!-- Modal -->
+
 	<script>
-		$(window).scroll(function () {
-			if ($(this).scrollTop() > 200) { //I just used 200 for testing
-				$("#tester").css({ "position": "fixed", "top": 0 });
-				//console.log($(this).scrollTop());
-			} else {
-				$("#tester").css({ "position": "absolute", "top": "0px" }); //same here
-			}
-		});
+		$('#modelId').on('shown.bs.modal', function () {
+			$('#myInput').focus()
+		})
 	</script>
 
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn"
+	 crossorigin="anonymous"></script>
 </body>
 
 </html>
