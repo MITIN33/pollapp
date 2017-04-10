@@ -19,6 +19,10 @@ body{
     padding: 10px;
 }
 
+#searchBox{
+    width: 400px;
+}
+
 .sticky-top-custom{
     position: sticky;
     top: 60px;
