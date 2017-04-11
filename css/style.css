@@ -46,11 +46,14 @@ a{
 }
 
 .question{
-      box-shadow: 0 0 0 1px rgba(0,0,0,.1);
       padding: 10px;
       background-color: #fff;
-      margin-bottom:10px;
       border-radius: 2px 2px;
+}
+
+.question-area{
+ box-shadow: 0 0 0 1px rgba(0,0,0,.1);
+     margin-bottom: 15px;
 }
 
 .user-title{
@@ -97,10 +100,15 @@ a{
 }
 
 .comment-area{
-     margin: 0px;
+   /*  margin: 0px;
      font-size: 13px;
      padding-top: 10px;
      border-top: 1px solid rgba(0,0,0,.3);
+*/
+    margin: 0px;
+    font-size: 13px;
+    padding: 10px;
+    background-color: rgba(92, 184, 92, 0.09);
 }
 
 .comment-thumnbnail-img{
