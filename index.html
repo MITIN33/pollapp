@@ -13,7 +13,7 @@
 </head>
 
 <body>
-	<nav class="navbar navbar-toggleable-md navbar-light bg-faded fixed-top">
+	<nav class="navbar navbar-toggleable-md fixed-top" style="background-color:#3c763d!important">
 		<button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
 		 aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
@@ -24,7 +24,8 @@
 
 				<form class="form-inline my-2 my-lg-0 mr-auto">
 					<input class="form-control mr-sm-2 input-group-lg" type="text" id="searchBox" placeholder="Search">
-					<button class="btn btn-outline-success my-2 my-sm-0" type="button" data-toggle="modal" data-target="#emyModal">Create Poll</button>
+					<button id="createBtn" class="btn btn-outline-success my-2 my-sm-0" type="button" data-toggle="modal" data-target="#emyModal">Create Poll</button>
+
 				</form>
 
 				<ul class="navbar-nav">
@@ -86,18 +87,93 @@
 			<div class="col-md-6">
 				<div class="question">
 					<div class="media">
-						<img class="d-flex align-self-start mr-3 thumnbnail-img" src="abhi.jpg" alt="Generic placeholder image">
+						<a href=""><img class="d-flex align-self-start mr-3 thumnbnail-img" src="abhi.jpg" alt="Generic placeholder image"></a>
 						<div class="media-body">
-							<h5 class="mt-0">Top-aligned media</h5>
-							<p>
-								Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin. Cras purus odio, vestibulum in
-								vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis
-								in faucibus.
-							</p>
-							<p>
+							<div class="user-title"><a href="#">Abhishek </a></div>
+							<div class="q-date-time">3 April 5:40 PM</div>
+							<h5 class="q-title">Is Yogi Aditya right Candidate for CM ?</h5>
+							<p class="description">
 								Donec sed odio dui. Nullam quis risus eget urna mollis ornare vel eu leo. Cum sociis natoque penatibus et magnis dis parturient
 								montes, nascetur ridiculus mus.
 							</p>
+
+							<ul class="list-inline options-list">
+								<li class="list-inline-item">
+									<div class="input-group margin-bottom-sm option">
+										<span class="input-group-addon"><i class="fa fa-plus" aria-hidden="true"></i></i></i></span>
+										<input class="form-control" type="button" value="Yes">
+									</div>
+									</br>
+									<div class="count">1,400,987</div>
+								</li>
+								<li class="list-inline-item">
+									<div class="input-group margin-bottom-sm option">
+										<span class="input-group-addon"><i class="fa fa-plus" aria-hidden="true"></i></i></span>
+										<input class="form-control" type="button" value="No">
+									</div>
+									</br>
+									<div class="count">1.5k</div>
+								</li>
+								<li class="list-inline-item">
+									<div class="input-group margin-bottom-sm option">
+										<span class="input-group-addon"><i class="fa fa-plus" aria-hidden="true"></i></i></span>
+										<input class="form-control" type="button" value="Maybe">
+									</div>
+									</br>
+									<div class="count">145k</div>
+
+								</li>
+							</ul>
+
+							<div class="row comment-area">
+
+								<div class="media">
+									<a href=""><img class="d-flex align-self-start mr-3 comment-thumnbnail-img" src="pp.png" alt="Abhishek"></a>
+									<div class="comment-text-area">
+										<strong>Mitin</strong> Donec sed odio dui. Nullam quis risus eget urna mollis ornare vel eu leo. Cum sociis natoque
+										penatibus et magnis dis parturient montes, nascetur ridiculus mus.
+										<div class="q-date-time">13 hr</div>
+									</div>
+								</div>
+
+
+								<div class="media">
+									<a href=""><img class="d-flex align-self-start mr-3 comment-thumnbnail-img" src="pp.png" alt="Abhishek"></a>
+									<div class="comment-text-area">
+										<strong>Mitin</strong> Donec sed odio dui. Nullam quis risus eget urna mollis ornare vel eu leo. Cum sociis natoque
+										
+										<div class="q-date-time">13 hr</div>
+									</div>
+								</div>
+
+
+								<div class="media">
+									<a href=""><img class="d-flex align-self-start mr-3 comment-thumnbnail-img" src="pp.png" alt="Abhishek"></a>
+									<div class="comment-text-area">
+										<strong>Mitin</strong> Donec sed odio dui.s.
+										<div class="q-date-time">13 hr</div>
+									</div>
+								</div>
+
+								<div class="media">
+									<a href=""><img class="d-flex align-self-start mr-3 comment-thumnbnail-img" src="pp.png" alt="Abhishek"></a>
+									<div class="comment-text-area">
+										<strong>Mitin</strong> Donec sed odio dui.  Cum sociis natoque
+										penatibus et magnis dis parturient montes, nascetur ridiculus mus.
+										<div class="q-date-time">13 hr</div>
+									</div>
+								</div>
+								<div class="media">
+									<a href=""><img class="d-flex align-self-start mr-3 comment-thumnbnail-img" src="pp.png" alt="Abhishek"></a>
+									<div class="comment-text-area">
+										<strong>Mitin</strong> Donec sed odio dui. Nullam quis risus eget urna mollis ornare vel eu leo. Cum sociis natoque
+										penatibus et magnis dis parturient montes, nascetur ridiculus mus.
+										<div class="q-date-time">13 hr</div>
+									</div>
+								</div>
+							</div>
+
+
 						</div>
 					</div>
 				</div>
@@ -105,16 +181,19 @@
 					<div class="media">
 						<img class="d-flex align-self-start mr-3 thumnbnail-img" src="su.jpg" alt="Generic placeholder image">
 						<div class="media-body">
-							<h5 class="mt-0">Top-aligned media</h5>
-							<p>
-								Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin. Cras purus odio, vestibulum in
-								vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis
-								in faucibus.
-							</p>
+							<div class="user-title"><a href="#">Sucheta</a></div>
+							<div class="q-date-time">3 April 5:40 PM</div>
+							<h5 class="q-title">Is Yogi Aditya right Candidate for CM ?</h5>
 							<p>
 								Donec sed odio dui. Nullam quis risus eget urna mollis ornare vel eu leo. Cum sociis natoque penatibus et magnis dis parturient
 								montes, nascetur ridiculus mus.
 							</p>
+
+							<ul class="list-inline">
+								<li class="list-inline-item">Item</li>
+								<li class="list-inline-item">Item</li>
+								<li class="list-inline-item">Item</li>
+							</ul>
 						</div>
 					</div>
 				</div>
@@ -122,16 +201,19 @@
 					<div class="media">
 						<img class="d-flex align-self-start mr-3 thumnbnail-img" src="pp.png" alt="Generic placeholder image">
 						<div class="media-body">
-							<h5 class="mt-0">Top-aligned media</h5>
-							<p>
-								Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin. Cras purus odio, vestibulum in
-								vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis
-								in faucibus.
-							</p>
+							<div class="user-title"><a href="#">Mitin</a></div>
+							<div class="q-date-time">3 April 5:40 PM</div>
+							<h5 class="q-title">Is Yogi Aditya right Candidate for CM ?</h5>
 							<p>
 								Donec sed odio dui. Nullam quis risus eget urna mollis ornare vel eu leo. Cum sociis natoque penatibus et magnis dis parturient
 								montes, nascetur ridiculus mus.
 							</p>
+
+							<ul class="list-inline">
+								<li class="list-inline-item">Item</li>
+								<li class="list-inline-item">Item</li>
+								<li class="list-inline-item">Item</li>
+							</ul>
 						</div>
 					</div>
 				</div>
@@ -139,16 +221,19 @@
 					<div class="media">
 						<img class="d-flex align-self-start mr-3 thumnbnail-img" src="su.jpg" alt="Generic placeholder image">
 						<div class="media-body">
-							<h5 class="mt-0">Top-aligned media</h5>
-							<p>
-								Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin. Cras purus odio, vestibulum in
-								vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis
-								in faucibus.
-							</p>
+							<div class="user-title"><a href="#">Sucheta </a></div>
+							<div class="q-date-time">3 April 5:40 PM</div>
+							<h5 class="q-title">Is Yogi Aditya right Candidate for CM ?</h5>
 							<p>
 								Donec sed odio dui. Nullam quis risus eget urna mollis ornare vel eu leo. Cum sociis natoque penatibus et magnis dis parturient
 								montes, nascetur ridiculus mus.
 							</p>
+
+							<ul class="list-inline">
+								<li class="list-inline-item">Item</li>
+								<li class="list-inline-item">Item</li>
+								<li class="list-inline-item">Item</li>
+							</ul>
 						</div>
 					</div>
 				</div>
@@ -156,16 +241,19 @@
 					<div class="media">
 						<img class="d-flex align-self-start mr-3 thumnbnail-img" src="pp.png" alt="Generic placeholder image">
 						<div class="media-body">
-							<h5 class="mt-0">Top-aligned media</h5>
-							<p>
-								Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin. Cras purus odio, vestibulum in
-								vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis
-								in faucibus.
-							</p>
+							<div class="user-title"><a href="#">Mitin </a></div>
+							<div class="q-date-time">3 April 5:40 PM</div>
+							<h5 class="q-title">Is Yogi Aditya right Candidate for CM ?</h5>
 							<p>
 								Donec sed odio dui. Nullam quis risus eget urna mollis ornare vel eu leo. Cum sociis natoque penatibus et magnis dis parturient
 								montes, nascetur ridiculus mus.
 							</p>
+
+							<ul class="list-inline">
+								<li class="list-inline-item">Item</li>
+								<li class="list-inline-item">Item</li>
+								<li class="list-inline-item">Item</li>
+							</ul>
 						</div>
 					</div>
 				</div>
@@ -189,11 +277,18 @@
 			</div>
 			<!-- Main Feed Area -->
 			<!-- Related Search Area -->
-			<div>
+			<div class="col-md-3" style="padding:0px;">
 				<div id="right-side-pane" class="sticky-top-custom">
+					<div class="relatedSearch">
+						<h5>This area is for related search</h5>
+						<div class="container">
+							<div class="input-group margin-bottom-sm option">
+								<input class="form-control" type="button" value="Yes">
+								<span class="input-group-addon"><i class="fa fa-plus" aria-hidden="true"></i></i></span>
+							</div>
 
-
-
+						</div>
+					</div>
 				</div>
 			</div>
 			<!-- Related Search Area -->

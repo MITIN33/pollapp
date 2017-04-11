@@ -1,22 +1,16 @@
 body{
     background-color: #eeeeee;
-    margin-top: 60px;
+    margin-top: 65px;
+}
+
+a{
+    color: white;
 }
 
 
 #logo{
     width: 150px;
     height: 50px;
-}
-
-#searchBox{
-    width: 300px;
-}
-
-#left-side-pane{
-    box-shadow: 0 0 0 1px rgba(0,0,0,.1);
-    background-color: #fff;
-    padding: 10px;
 }
 
 #searchBox{
@@ -29,6 +23,12 @@ body{
     z-index: 1030;
 }
 
+#left-side-pane{
+    box-shadow: 0 0 0 1px rgba(0,0,0,.1);
+    background-color: #fff;
+    padding: 10px;
+}
+
 #left-side-pane img{
     width: 100px;
     height: 100px;
@@ -39,6 +39,12 @@ body{
     padding: 10px 0px;
 }
 
+#right-side-pane{
+    box-shadow: 0 0 0 1px rgba(0,0,0,.1);
+    background-color: #fff;
+    padding:10px;
+}
+
 .question{
       box-shadow: 0 0 0 1px rgba(0,0,0,.1);
       padding: 10px;
@@ -47,10 +53,92 @@ body{
       border-radius: 2px 2px;
 }
 
-.thumnbnail-img{
-    width: 30px;
+.user-title{
+    font-weight: 500;
+    margin: 0px;
+    padding: 0px;
+}
+
+.user-title > a{
+    color: black;
+}
+.q-date-time{
+    font-size: 10px;
+    font-family: cursive;
+}
+
+.q-title{
+   margin-top:15px;
+}
+
+.input-group-addon{
+    padding:8px;
+}
+
+.option > input[type=button]{
+    padding: 6px;
+    cursor: pointer;
+}
+
+
+.input-group-addon:hover{
+    background-color:rgba(92, 184, 92, 0.64);
+    color: white;
+}
+
+
+.count{
+    font-weight: bold;
+    font-family: cursive;
+    /* font-size: 70%; */
+    color: #292b2c;
+    font-size: 12px;
+    padding: 2px;
+}
+
+.comment-area{
+     margin: 0px;
+     font-size: 13px;
+     padding-top: 10px;
+     border-top: 1px solid rgba(0,0,0,.3);
+}
+
+.comment-thumnbnail-img{
+    width:30px;
     height: 30px;
 }
+
+.media{
+    padding-top: 10px;
+}
+.comment-text-area{
+    padding-right:10px; 
+    line-height: 1.4em;
+}
+
+.option{
+    display: inline-flex;
+    width: auto; 
+    cursor: pointer;
+    margin-right: 15px;
+}
+
+.option:hover{
+    box-shadow: 0 0 0 1px rgba(0,0,0,.1);
+    
+}
+
+.description{
+        padding-bottom: 15px;
+    border-bottom: 1px solid rgba(0,0,0,.3);
+}
+
+.thumnbnail-img{
+    width: 40px;
+    height: 40px;
+}
+
+
 
 #tester {
    
