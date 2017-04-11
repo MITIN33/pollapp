@@ -54,6 +54,7 @@ a{
 .question-area{
  box-shadow: 0 0 0 1px rgba(0,0,0,.1);
      margin-bottom: 15px;
+     border: 1px solid rgba(0,0,0,.3);
 }
 
 .user-title{
@@ -107,7 +108,7 @@ a{
 */
     margin: 0px;
     font-size: 13px;
-    padding: 10px;
+    padding: 12px;
     background-color: rgba(92, 184, 92, 0.09);
 }
 
