@@ -3,7 +3,8 @@ body{
     margin-top: 65px;
 }
 
-a{
+
+nav a{
     color: white;
 }
 
@@ -69,6 +70,7 @@ a{
 .q-date-time{
     font-size: 10px;
     font-family: cursive;
+    color: black;
 }
 
 .q-title{
@@ -147,11 +149,4 @@ a{
     height: 40px;
 }
 
-
-
-#tester {
-   
-    height: 200px;
-    width: 100px;
-    background: red;
-}
+/* Login Page Css */
