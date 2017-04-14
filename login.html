@@ -24,74 +24,112 @@
             </div>
         </div>
 
-        <div class="row align-items-center">
+        <div class="row">
 
             <div id="logo-img" class="col-md-4 offset-md-1 highlight-q">
                 <p><img src="opinion-summary.jpg" alt="" width="450px;"></p>
             </div>
 
             <div class="col-md-4">
-                <div class="row">
-                    <div class="register-form">
-                        <form role="form">
-                            <h5><a href=""> Sign In</a> | <a href="">Register</a></h5>
-                            <hr class="colorgraph">
-                            <div class="row">
-                                <div class="col-xs-12 col-sm-6 col-md-6">
-                                    <div class="form-group">
-                                        <input type="text" name="first_name" id="first_name" class="form-control input-lg" placeholder="First Name" tabindex="1">
-                                    </div>
-                                </div>
-                                <div class="col-xs-12 col-sm-6 col-md-6">
-                                    <div class="form-group">
-                                        <input type="text" name="last_name" id="last_name" class="form-control input-lg" placeholder="Last Name" tabindex="2">
-                                    </div>
+                <div class="row entrypanel">
+                    <div class="col-md-12">
+                            <div id="signinBtn" class="btn active" href="#" role="button">Sign In</div> |
+                            <div id="registerBtn" class="btn" href="#" role="button">Register</div>
+                    </div>
+                    <form id="registerform" role="form">
+                        <hr class="colorgraph">
+                        <div class="row">
+                            <div class="col-xs-12 col-sm-6 col-md-6">
+                                <div class="form-group">
+                                    <input type="text" name="first_name" id="first_name" class="form-control input-lg" placeholder="First Name" tabindex="1">
                                 </div>
                             </div>
-                            <div class="form-group">
-                                <input type="text" name="display_name" id="display_name" class="form-control input-lg" placeholder="Display Name" tabindex="3">
-                            </div>
-                            <div class="form-group">
-                                <input type="email" name="email" id="email" class="form-control input-lg" placeholder="Email Address" tabindex="4">
-                            </div>
-                            <div class="row">
-                                <div class="col-xs-12 col-sm-6 col-md-6">
-                                    <div class="form-group">
-                                        <input type="password" name="password" id="password" class="form-control input-lg" placeholder="Password" tabindex="5">
-                                    </div>
-                                </div>
-                                <div class="col-xs-12 col-sm-6 col-md-6">
-                                    <div class="form-group">
-                                        <input type="password" name="password_confirmation" id="password_confirmation" class="form-control input-lg" placeholder="Confirm Password"
-                                            tabindex="6">
-                                    </div>
+                            <div class="col-xs-12 col-sm-6 col-md-6">
+                                <div class="form-group">
+                                    <input type="text" name="last_name" id="last_name" class="form-control input-lg" placeholder="Last Name" tabindex="2">
                                 </div>
                             </div>
-                            <div class="row">
-                                <div class="col-lg-4">
-                                    <input type="submit" id="reg" value="Register" class="btn btn-success btn-block btn-md" tabindex="7">
+                        </div>
+                        <div class="form-group">
+                            <input type="text" name="display_name" id="display_name" class="form-control input-lg" placeholder="Display Name" tabindex="3">
+                        </div>
+                        <div class="form-group">
+                            <input type="email" name="email" id="email" class="form-control input-lg" placeholder="Email Address" tabindex="4">
+                        </div>
+                        <div class="row">
+                            <div class="col-xs-12 col-sm-6 col-md-6">
+                                <div class="form-group">
+                                    <input type="password" name="password" id="password" class="form-control input-lg" placeholder="Password" tabindex="5">
                                 </div>
-                                <div class="col-lg-8">
-                                    <small>By clicking <strong class="label label-primary">Register</strong>, you agree to the
+                            </div>
+                            <div class="col-xs-12 col-sm-6 col-md-6">
+                                <div class="form-group">
+                                    <input type="password" name="password_confirmation" id="password_confirmation" class="form-control input-lg" placeholder="Confirm Password"
+                                        tabindex="6">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-lg-4">
+                                <input type="submit" id="reg" value="Register" class="btn btn-success btn-block btn-md" tabindex="7">
+                            </div>
+                            <div class="col-lg-8" style="line-height: 1">
+                                <small>By clicking <strong class="label label-primary">Register</strong>, you agree to the
                                     <a href="#" data-toggle="modal" data-target="#t_and_c_m">Terms and Conditions</a> set
                                     out by this site, including our Cookie Use.</small>
-                                </div>
                             </div>
+                        </div>
 
-                            <hr class="colorgraph">
-                            <div class="row justify-content-center">
-                                <div class="col-xs-12 col-md-9">
-                                    <div class="social-login">
-                                        <ul>
-                                            <li><a href=""><i class="fa fa-facebook"></i> Facebook</a></li>
-                                            <li><a href=""><i class="fa fa-google-plus"></i> Google+</a></li>
-                                            <li><a href=""><i class="fa fa-twitter"></i> Twitter</a></li>
-                                        </ul>
-                                    </div>
+                        <hr class="colorgraph">
+                        <div class="row justify-content-center">
+                            <div class="col-xs-12 col-md-9">
+                                <div class="social-login">
+                                    <ul>
+                                        <li><a href=""><i class="fa fa-facebook"></i> Facebook</a></li>
+                                        <li><a href=""><i class="fa fa-google-plus"></i> Google+</a></li>
+                                        <li><a href=""><i class="fa fa-twitter"></i> Twitter</a></li>
+                                    </ul>
                                 </div>
                             </div>
-                        </form>
-                    </div>
+                        </div>
+                    </form>
+
+
+                    <form id="loginform" action="index.html" role="form">
+                        <hr class="colorgraph">
+                        <div class="row">
+                            <div class="col-md-12">
+                                <div class="input-group form-group margin-bottom-sm">
+                                    <span class="input-group-addon"><i class="fa fa-envelope-o fa-fw" aria-hidden="true"></i></span>
+                                    <input class="form-control" name="Email" type="text" placeholder="Email address">
+                                </div>
+                                <div class="input-group form-group">
+                                    <span class="input-group-addon"><i class="fa fa-key fa-fw" aria-hidden="true"></i></span>
+                                    <input class="form-control" type="password" placeholder="Password">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-6 form-group">
+                                <input type="submit" id="loginbtn" value="Login" class="btn btn-success btn-block btn-md" tabindex="7">
+                                <a name="forgotId" id="forgotId" class="forgotpassword" href="#" role="button">Forgot Password ?</a>
+                            </div>
+                        </div>
+
+                        <hr class="colorgraph">
+                        <div class="row justify-content-center">
+                            <div class="col-xs-12 col-md-12">
+                                <div class="social-login">
+                                    <ul>
+                                        <li><a href=""><i class="fa fa-facebook"></i> Facebook</a></li>
+                                        <li><a href=""><i class="fa fa-google-plus"></i> Google+</a></li>
+                                        <li><a href=""><i class="fa fa-twitter"></i> Twitter</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+
                 </div>
                 <!-- Modal -->
                 <div class="modal fade" id="t_and_c_m" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
@@ -148,7 +186,24 @@
     <script src="js/scripts.js"></script>
     <script>
         $(document).ready(function () {
-           
+
+
+            
+            $("#registerBtn").click(function () {
+                $("#loginform").fadeOut(.8, function () {
+                    $("#registerform").fadeIn();
+                });
+                $(this).addClass("active");
+                $("#signinBtn").removeClass("active");
+            });
+
+            $("#signinBtn").click(function () {
+                $("#registerform").fadeOut(.8, function () {
+                    $("#loginform").fadeIn();
+                });
+                $(this).addClass("active");
+                $("#registerBtn").removeClass("active");
+            })
         });
     </script>
 

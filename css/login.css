@@ -1,5 +1,5 @@
 .page-title{
-    margin-bottom:50px;
+    margin-bottom:20px;
     margin-top: 50px;
 }
 
@@ -20,8 +20,25 @@
     }
 }
 
-.register-form{
-        padding-left: 20px;
+.forgotpassword{
+    font-size: 13px;
+}
+
+#registerform{
+        display: none;
+}
+
+#loginform{
+
+}
+
+#logo-img{
+    transition: 1s all;
+    margin-top: 50px;
+}
+
+.entrypanel{
+    padding: 20px;
 }
 
 .highlight-q{
@@ -40,6 +57,10 @@
 .social-login{
 	text-align:center;
 	font-size:12px;
+}
+
+.active{
+    color: cornflowerblue;
 }
 
 .social-login ul{
