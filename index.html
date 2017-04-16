@@ -87,7 +87,7 @@
 			<!-- Main Feed Area -->
 			<div class="col-md-6">
 
-				<div class="question-area">
+				<div id="question1" class="question-area">
 					<div class="question">
 						<div class="media">
 							<a href=""><img class="d-flex align-self-start mr-3 thumnbnail-img" src="abhi.jpg" alt="Generic placeholder image"></a>
@@ -126,7 +126,7 @@
 										<div class="count">145k</div>
 									</li>
 									<li class="list-inline-item">
-										<i id="cmt2" class="fa fa-arrow-circle-down comment-toggle" aria-hidden="true"></i>
+										<i class="fa fa-arrow-circle-down comment-toggle" style="font-size: 20px;" aria-hidden="true"></i>
 									</li>
 								</ul>
 
@@ -329,7 +329,7 @@
 					</div>
 				</div>
 
-				<div class="question-area">
+				<div id="question2" class="question-area">
 					<div class="question">
 						<div class="media">
 							<a href=""><img class="d-flex align-self-start mr-3 thumnbnail-img" src="abhi.jpg" alt="Generic placeholder image"></a>
@@ -368,7 +368,7 @@
 										<div class="count">145k</div>
 									</li>
 									<li class="list-inline-item">
-										<i id="cmt1" class="fa fa-arrow-circle-down comment-toggle" aria-hidden="true"></i>
+										<i class="comment-toggle fa fa-arrow-circle-down" style="font-size: 20px;" aria-hidden="true"></i>
 									</li>
 								</ul>
 
@@ -625,7 +625,14 @@
 			});
 
 			$('.comment-toggle').click(function () {
-				var div = $(this).closest($('.question-area')).find('.comment-area');
+				var div = $(this).closest('.question-area').find('.carousel-inner');
+				console.log(div);
+				if (!div.is(':visible')) {
+					$(this).removeClass('fa-arrow-circle-down').addClass('fa-arrow-circle-up');
+				}
+				else {
+					$(this).removeClass('fa-arrow-circle-up').addClass('fa-arrow-circle-down');
+				}
 				div.slideToggle();
 			});
 

@@ -134,8 +134,11 @@ nav a{
     margin: 0px;
     font-size: 13px;
     padding: 12px;
-    display: none; 
     background-color: rgba(92, 184, 92, 0.09);
+}
+
+.carousel-inner{
+    display: none;
 }
 
 .comment-thumnbnail-img{
