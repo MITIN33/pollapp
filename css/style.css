@@ -9,6 +9,15 @@ nav a{
 }
 
 
+.comment-toggle{
+    color: seagreen;
+}
+
+.view-more-comments{
+    font-size: 12px;
+    color: cornflowerblue;
+}
+
 #logo{
     width: 150px;
     height: 50px;
@@ -58,6 +67,20 @@ nav a{
      border: 1px solid rgba(0,0,0,.3);
 }
 
+.anchor{
+    font-size: 11px;
+    color:cornflowerblue;
+    cursor: pointer;
+    display: inline-block;
+    font-family: 'Cairo', sans-serif;
+}
+
+.anchor:hover{
+    font-size: 11px;
+    color: cornflowerblue;
+    text-decoration: underline;
+}
+
 .user-title{
     font-weight: 500;
     margin: 0px;
@@ -67,9 +90,9 @@ nav a{
 .user-title > a{
     color: black;
 }
-.q-date-time{
-    font-size: 10px;
-    font-family: cursive;
+.q-side-text{
+    font-size: 11px;
+    font-family: 'Cairo', sans-serif;
     color: black;
 }
 
@@ -111,6 +134,7 @@ nav a{
     margin: 0px;
     font-size: 13px;
     padding: 12px;
+    display: none; 
     background-color: rgba(92, 184, 92, 0.09);
 }
 

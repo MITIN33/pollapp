@@ -20,6 +20,10 @@
     }
 }
 
+#signinBtn, #registerBtn{
+ padding: 0px;
+}
+
 .forgotpassword{
     font-size: 13px;
 }
