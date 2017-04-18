@@ -26,7 +26,6 @@
 				<form class="form-inline my-2 my-lg-0 mr-auto">
 					<input class="form-control mr-sm-2 input-group-lg" type="text" id="searchBox" placeholder="Search">
 					<button id="createBtn" class="btn btn-outline-success my-2 my-sm-0" type="button" data-toggle="modal" data-target="#emyModal">Create Poll</button>
-
 				</form>
 
 				<ul class="navbar-nav">
@@ -65,19 +64,29 @@
 						<img src="pp.png" class="rounded-circle" alt="">
 						<h5>Mitin Dixit</h5>
 					</div>
-					<div class="quickLinks">
-						<ul class="list-unstyled">
-							<li>
-								Lorem ipsum dolor sit amet
+					<div class="quick-links">
+						<ul class="list-group">
+							<li class="list-group-item list-divider">
+								Following
 							</li>
-							<li>
-								Consectetur adipiscing elit
+							<li class="list-group-item justify-content-between">
+								<a href="#">Mitin</a>
+								<span class="badge badge-default">2</span>
 							</li>
-							<li>
-								Integer molestie lorem at massa
+							<li class="list-group-item justify-content-between">
+								<a href="#">Speigel</a>
+								<span class="badge badge-default">1</span>
 							</li>
-							<li>
-								Eget porttitor lorem
+							<li class="list-group-item list-divider">
+								Groups
+							</li>
+							<li class="list-group-item justify-content-between">
+								<a href="#">MMMEC</a>
+								<span class="badge badge-default">2</span>
+							</li>
+							<li class="list-group-item justify-content-between">
+								<a href="#">Microsoft</a>
+								<span class="badge badge-default">1</span>
 							</li>
 						</ul>
 					</div>
@@ -104,7 +113,7 @@
 									<li class="list-inline-item">
 										<div class="input-group margin-bottom-sm option">
 											<span class="input-group-addon"><i class="fa fa-plus" aria-hidden="true"></i></i></i></span>
-											<input class="form-control" data-target="#commentSectionId" data-slide-to="0" id="option1" type="button" value="Yes">
+											<input class="form-control" data-target="#commentSectionId1" data-slide-to="0" id="option1" type="button" value="Yes">
 										</div>
 										</br>
 										<div class="count">1,400,987</div>
@@ -112,7 +121,7 @@
 									<li class="list-inline-item">
 										<div class="input-group margin-bottom-sm option">
 											<span class="input-group-addon"><i class="fa fa-plus" aria-hidden="true"></i></i></span>
-											<input class="form-control" data-target="#commentSectionId" data-slide-to="1" type="button" value="No">
+											<input class="form-control" data-target="#commentSectionId1" data-slide-to="1" type="button" value="No">
 										</div>
 										</br>
 										<div class="count">1.5k</div>
@@ -120,21 +129,19 @@
 									<li class="list-inline-item">
 										<div class="input-group margin-bottom-sm option">
 											<span class="input-group-addon"><i class="fa fa-plus" aria-hidden="true"></i></i></span>
-											<input class="form-control" data-target="#commentSectionId" data-slide-to="2" type="button" value="Maybe">
+											<input class="form-control" data-target="#commentSectionId1" data-slide-to="2" type="button" value="Maybe">
 										</div>
 										</br>
 										<div class="count">145k</div>
 									</li>
-									<li class="list-inline-item">
-										<i class="fa fa-arrow-circle-down comment-toggle" style="font-size: 20px;" aria-hidden="true"></i>
-									</li>
+									<div class="cairo comment-toggle"><i class="fa fa-commenting comment-toggle" aria-hidden="true"></i>comments</div>
 								</ul>
 
 
 							</div>
 						</div>
 					</div>
-					<div id="commentSectionId" class="carousel" data-ride="carousel" data-interval="false">
+					<div id="commentSectionId1" class="carousel" data-ride="carousel" data-interval="false">
 						<div class="carousel-inner" role="listbox">
 							<div class="carousel-item active">
 								<div class="row comment-area">
@@ -346,7 +353,7 @@
 									<li class="list-inline-item">
 										<div class="input-group margin-bottom-sm option">
 											<span class="input-group-addon"><i class="fa fa-plus" aria-hidden="true"></i></i></i></span>
-											<input class="form-control" data-target="#commentSectionId" data-slide-to="0" id="option1" type="button" value="Yes">
+											<input class="form-control" data-target="#commentSectionId2" data-slide-to="0" id="option1" type="button" value="Yes">
 										</div>
 										</br>
 										<div class="count">1,400,987</div>
@@ -354,7 +361,7 @@
 									<li class="list-inline-item">
 										<div class="input-group margin-bottom-sm option">
 											<span class="input-group-addon"><i class="fa fa-plus" aria-hidden="true"></i></i></span>
-											<input class="form-control" data-target="#commentSectionId" data-slide-to="1" type="button" value="No">
+											<input class="form-control" data-target="#commentSectionId2" data-slide-to="1" type="button" value="No">
 										</div>
 										</br>
 										<div class="count">1.5k</div>
@@ -362,21 +369,19 @@
 									<li class="list-inline-item">
 										<div class="input-group margin-bottom-sm option">
 											<span class="input-group-addon"><i class="fa fa-plus" aria-hidden="true"></i></i></span>
-											<input class="form-control" data-target="#commentSectionId" data-slide-to="2" type="button" value="Maybe">
+											<input class="form-control" data-target="#commentSectionId2" data-slide-to="2" type="button" value="Maybe">
 										</div>
 										</br>
 										<div class="count">145k</div>
 									</li>
-									<li class="list-inline-item">
-										<i class="comment-toggle fa fa-arrow-circle-down" style="font-size: 20px;" aria-hidden="true"></i>
-									</li>
+									<div class="cairo comment-toggle"><i class="fa fa-commenting comment-toggle" aria-hidden="true"></i>comments</div>
 								</ul>
 
 
 							</div>
 						</div>
 					</div>
-					<div id="commentSectionId" class="carousel" data-ride="carousel" data-interval="false">
+					<div id="commentSectionId2" class="carousel" data-ride="carousel" data-interval="false">
 						<div class="carousel-inner" role="listbox">
 							<div class="carousel-item active">
 								<div class="row comment-area">
@@ -436,10 +441,7 @@
 											<div class="view-more-comments">View more comments</div>
 										</div>
 									</div>
-
-
 								</div>
-
 							</div>
 							<div class="carousel-item">
 								<div class="row comment-area">
@@ -597,11 +599,35 @@
 										</button>
 				</div>
 				<div class="modal-body">
-					...
+					<form id="registerform" role="form">
+						<div class="form-group">
+							<label class="form-group" for="ques">Question</label>
+							<input type="text" name="question" id="ques" class="form-control input-lg" placeholder="Question" tabindex="3">
+						</div>
+						<div class="form-group">
+							<label for="desc">Description</label>
+							<input type="text" name="description" id="desc" class="form-control input-lg" placeholder="Desription" tabindex="4">
+						</div>
+						<div class="row">
+							<div class="col-xs-12 col-sm-6 col-md-6">
+								<div class="form-group">
+									<label for="categorySelect">Category</label>
+									<select class="form-control" name="categorySelect" aria-placeholder="category" id="categorySelect">
+									<option>Entertainment</option>
+									<option>School</option>
+									<option>Public</option>
+								  </select>
+								</div>
+							</div>
+							<div class="col-xs-12 col-sm-6 col-md-6">
+
+							</div>
+						</div>
+					</form>
 				</div>
 				<div class="modal-footer">
 					<button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-					<button type="button" class="btn btn-primary">Save changes</button>
+					<button type="button" class="btn btn-primary">Submit</button>
 				</div>
 			</div>
 		</div>
@@ -626,13 +652,6 @@
 
 			$('.comment-toggle').click(function () {
 				var div = $(this).closest('.question-area').find('.carousel-inner');
-				console.log(div);
-				if (!div.is(':visible')) {
-					$(this).removeClass('fa-arrow-circle-down').addClass('fa-arrow-circle-up');
-				}
-				else {
-					$(this).removeClass('fa-arrow-circle-up').addClass('fa-arrow-circle-down');
-				}
 				div.slideToggle();
 			});
 

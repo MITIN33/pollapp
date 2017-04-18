@@ -1,3 +1,9 @@
+@media only screen and (max-width: 750px) {
+    #left-side-pane {
+        display: none;
+    }
+}
+
 body{
     background-color: #eeeeee;
     margin-top: 65px;
@@ -10,7 +16,13 @@ nav a{
 
 
 .comment-toggle{
-    color: seagreen;
+    color: #999;
+    font-size: 85%;
+    padding-right:5px;
+}
+.comment-toggle:hover{
+    text-decoration: underline;
+    cursor: pointer;
 }
 
 .view-more-comments{
@@ -30,13 +42,14 @@ nav a{
 .sticky-top-custom{
     position: sticky;
     top: 60px;
-    z-index: 1030;
+    z-index: 0;
 }
 
 #left-side-pane{
     box-shadow: 0 0 0 1px rgba(0,0,0,.1);
     background-color: #fff;
     padding: 10px;
+    min-width: 220px;
 }
 
 #left-side-pane img{
@@ -45,8 +58,26 @@ nav a{
 }
 
 #left-side-pane li{
-    border-bottom: 1px solid black;
-    padding: 10px 0px;
+    padding: 3px 0px;
+    font-size: 15px;
+    
+}
+
+form label{
+    font-weight: bold;
+}
+
+.list-group-item{
+   border: 0px;
+}
+
+#left-side-pane li a{
+    color:black;
+ 
+}
+
+#createBtn{
+    color: white;
 }
 
 #right-side-pane{
@@ -55,11 +86,19 @@ nav a{
     padding:10px;
 }
 
+.list-divider{
+    font-weight: bold;
+    margin-top: 10px;
+    margin-bottom:0px;
+    border-top: 1px solid black;
+}
+
 .question{
       padding: 10px;
       background-color: #fff;
       border-radius: 2px 2px;
 }
+
 
 .question-area{
  box-shadow: 0 0 0 1px rgba(0,0,0,.1);
@@ -96,6 +135,10 @@ nav a{
     color: black;
 }
 
+.cairo{
+      font-family: 'Cairo', sans-serif;
+}
+
 .q-title{
    margin-top:15px;
 }
@@ -109,6 +152,9 @@ nav a{
     cursor: pointer;
 }
 
+.options-list{
+    margin-bottom: 0px;
+}
 
 .input-group-addon:hover{
     background-color:rgba(92, 184, 92, 0.64);
@@ -118,8 +164,7 @@ nav a{
 
 .count{
     font-weight: bold;
-    font-family: cursive;
-    /* font-size: 70%; */
+    font-family: 'Cairo', sans-serif;
     color: #292b2c;
     font-size: 12px;
     padding: 2px;
@@ -177,3 +222,4 @@ nav a{
 }
 
 /* Login Page Css */
+
