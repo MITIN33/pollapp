@@ -107,15 +107,16 @@ form label{
 }
 
 .anchor{
-    font-size: 11px;
+    font-size: 12px;
     color:cornflowerblue;
     cursor: pointer;
+    margin-right: 5px;
     display: inline-block;
     font-family: 'Cairo', sans-serif;
 }
 
 .anchor:hover{
-    font-size: 11px;
+    font-size: 12px;
     color: cornflowerblue;
     text-decoration: underline;
 }
@@ -146,6 +147,9 @@ form label{
 .input-group-addon{
     padding:8px;
 }
+.typeahead { 
+    z-index: 1051; 
+}
 
 .option > input[type=button]{
     padding: 6px;
@@ -154,6 +158,17 @@ form label{
 
 .options-list{
     margin-bottom: 0px;
+}
+
+.comments-list{
+    padding:0px;
+    list-style: none;
+    margin-bottom: 0px; 
+}
+
+.comment-box{
+    width: 450px;
+    padding: .3em .3em;
 }
 
 .input-group-addon:hover{
@@ -180,6 +195,12 @@ form label{
     font-size: 13px;
     padding: 12px;
     background-color: rgba(92, 184, 92, 0.09);
+}
+
+.comment-text-area {
+    margin-right: 5px;
+    font-size: 12px;
+
 }
 
 .carousel-inner{
