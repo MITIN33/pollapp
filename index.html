@@ -15,9 +15,8 @@
 
 <body>
 	<nav class="navbar navbar-toggleable-md fixed-top" style="background-color:#3c763d!important">
-		<button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
-		 aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
+	<button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
         </button>
 		<div class="container">
 			<a class="navbar-brand" href="#">Navbar</a>
@@ -137,7 +136,7 @@
 										</br>
 										<div class="count">145k</div>
 									</li>
-									<div class="cairo comment-toggle"><i class="fa fa-commenting comment-toggle" aria-hidden="true"></i>comments</div>
+									<div class="cairo comment-toggle"><i class="fa fa-commenting" aria-hidden="true"></i>comments</div>
 								</ul>
 
 
@@ -155,7 +154,7 @@
 									<div class="media">
 										<a href=""><img class="d-flex align-self-start mr-3 comment-thumnbnail-img" src="pp.png" alt="Abhishek"></a>
 										<div class="comment-text-area">
-											<input type="text" name="" class="comment-box" placeholder="comment">
+											<textarea type="text" name="" class="comment-box" rows="1" placeholder="comment"></textarea>
 											<div class="q-side-text">
 												<div href="" class="anchor cancel-comment">Cancel</div>
 												<div href="#" class="anchor save-comment">Save</div>
@@ -167,10 +166,13 @@
 											<div class="media">
 												<a href=""><img class="d-flex align-self-start mr-3 comment-thumnbnail-img" src="pp.png" alt="Abhishek"></a>
 												<div class="comment-text-area">
-													<strong>Mitin</strong> Donec sed odio dui. Nullam quis risus eget urna mollis ornare vel
-													eu leo. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.
+													<strong>Mitin</strong> Donec sed odio dui. Nullam quis risus eget urna mollis ornare vel eu leo. Cum sociis
+													natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.
 													<div class="q-side-text">13 hr .
-														<div class="anchor" id="likeBtn">Like</div>
+														<div class="anchor" id="likeBtn">Like</div>.
+														<span class="q-side-text" id="like-count">12</span>
+														<i class="fa fa-close edit-btn" aria-hidden="true"></i>
+														<i class="fa fa-edit edit-btn" aria-hidden="true"></i>
 													</div>
 												</div>
 											</div>
@@ -241,8 +243,8 @@
 											<div class="media">
 												<a href=""><img class="d-flex align-self-start mr-3 comment-thumnbnail-img" src="pp.png" alt="Abhishek"></a>
 												<div class="comment-text-area">
-													<strong>Mitin</strong> Donec sed odio dui. Nullam quis risus eget urna mollis ornare vel
-													eu leo. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.
+													<strong>Mitin</strong> Donec sed odio dui. Nullam quis risus eget urna mollis ornare vel eu leo. Cum sociis
+													natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.
 													<div class="q-side-text">13 hr .
 														<div class="anchor" id="likeBtn">Like</div>
 													</div>
@@ -303,7 +305,7 @@
 									<div class="media">
 										<a href=""><img class="d-flex align-self-start mr-3 comment-thumnbnail-img" src="pp.png" alt="Abhishek"></a>
 										<div class="comment-text-area">
-											<input type="text" name="" class="comment-box" placeholder="comment">
+											<div><input type="text" name="" class="comment-box" placeholder="comment"></div>
 											<div class="q-side-text">
 												<div href="" class="anchor cancel-comment">Cancel</div>
 												<div href="#" class="anchor save-comment">Save</div>
@@ -315,8 +317,8 @@
 											<div class="media">
 												<a href=""><img class="d-flex align-self-start mr-3 comment-thumnbnail-img" src="pp.png" alt="Abhishek"></a>
 												<div class="comment-text-area">
-													<strong>Mitin</strong> Donec sed odio dui. Nullam quis risus eget urna mollis ornare vel
-													eu leo. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.
+													<strong>Mitin</strong> Donec sed odio dui. Nullam quis risus eget urna mollis ornare vel eu leo. Cum sociis
+													natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.
 													<div class="q-side-text">13 hr .
 														<div class="anchor" id="likeBtn">Like</div>
 													</div>
@@ -337,9 +339,10 @@
 											<div class="media">
 												<a href=""><img class="d-flex align-self-start mr-3 comment-thumnbnail-img" src="pp.png" alt="Abhishek"></a>
 												<div class="comment-text-area">
-													<strong>Mitin</strong> Donec sed odio dui.s.
+													<strong>Mitin</strong> Donec sed odio dui.s
 													<div class="q-side-text">13 hr</div>
 												</div>
+
 											</div>
 										</li>
 										<li>
@@ -373,242 +376,6 @@
 					</div>
 				</div>
 
-				<div id="question2" class="question-area">
-					<div class="question">
-						<div class="media">
-							<a href=""><img class="d-flex align-self-start mr-3 thumnbnail-img" src="abhi.jpg" alt="Generic placeholder image"></a>
-							<div class="media-body">
-								<div class="user-title"><a href="#">Abhishek </a></div>
-								<div class="q-side-text">3 April 5:40 PM</div>
-								<h5 class="q-title">Is Yogi Aditya right Candidate for CM ?</h5>
-								<p class="description">
-									Donec sed odio dui. Nullam quis risus eget urna mollis ornare vel eu leo. Cum sociis natoque penatibus et magnis dis parturient
-									montes, nascetur ridiculus mus.
-								</p>
-
-								<ul class="list-inline options-list">
-									<li class="list-inline-item">
-										<div class="input-group margin-bottom-sm option">
-											<span class="input-group-addon"><i class="fa fa-plus" aria-hidden="true"></i></i></i></span>
-											<input class="form-control" data-target="#commentSectionId2" data-slide-to="0" id="option1" type="button" value="Yes">
-										</div>
-										</br>
-										<div class="count">1,400,987</div>
-									</li>
-									<li class="list-inline-item">
-										<div class="input-group margin-bottom-sm option">
-											<span class="input-group-addon"><i class="fa fa-plus" aria-hidden="true"></i></i></span>
-											<input class="form-control" data-target="#commentSectionId2" data-slide-to="1" type="button" value="No">
-										</div>
-										</br>
-										<div class="count">1.5k</div>
-									</li>
-									<li class="list-inline-item">
-										<div class="input-group margin-bottom-sm option">
-											<span class="input-group-addon"><i class="fa fa-plus" aria-hidden="true"></i></i></span>
-											<input class="form-control" data-target="#commentSectionId2" data-slide-to="2" type="button" value="Maybe">
-										</div>
-										</br>
-										<div class="count">145k</div>
-									</li>
-									<div class="cairo comment-toggle"><i class="fa fa-commenting comment-toggle" aria-hidden="true"></i>comments</div>
-								</ul>
-
-
-							</div>
-						</div>
-					</div>
-					<div id="commentSectionId2" class="carousel" data-ride="carousel" data-interval="false">
-						<div class="carousel-inner" role="listbox">
-							<div class="carousel-item active">
-								<div class="row comment-area">
-									<div>
-										<strong>Yes</strong> <a href="#"><span class="q-side-text">1,412,121</span> </a>
-									</div>
-									<div class="media">
-										<a href=""><img class="d-flex align-self-start mr-3 comment-thumnbnail-img" src="pp.png" alt="Abhishek"></a>
-										<div class="comment-text-area">
-											<strong>Mitin<span> (Yes)</span></strong> Donec sed odio dui. Nullam quis risus eget urna mollis ornare vel eu
-											leo. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.
-											<div class="q-side-text">13 hr .
-												<div class="anchor" id="likeBtn">Like</div>
-											</div>
-										</div>
-									</div>
-
-
-									<div class="media">
-										<a href=""><img class="d-flex align-self-start mr-3 comment-thumnbnail-img" src="pp.png" alt="Abhishek"></a>
-										<div class="comment-text-area">
-											<strong>Mitin</strong> Donec sed odio dui. Nullam quis risus eget urna mollis ornare vel eu leo. Cum sociis natoque
-
-											<div class="q-side-text">13 hr</div>
-										</div>
-									</div>
-
-
-									<div class="media">
-										<a href=""><img class="d-flex align-self-start mr-3 comment-thumnbnail-img" src="pp.png" alt="Abhishek"></a>
-										<div class="comment-text-area">
-											<strong>Mitin</strong> Donec sed odio dui.s.
-											<div class="q-side-text">13 hr</div>
-										</div>
-									</div>
-
-									<div class="media">
-										<a href=""><img class="d-flex align-self-start mr-3 comment-thumnbnail-img" src="pp.png" alt="Abhishek"></a>
-										<div class="comment-text-area">
-											<strong>Mitin</strong> Donec sed odio dui. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur
-											ridiculus mus.
-											<div class="q-side-text">13 hr</div>
-										</div>
-									</div>
-									<div class="media">
-										<a href=""><img class="d-flex align-self-start mr-3 comment-thumnbnail-img" src="pp.png" alt="Abhishek"></a>
-										<div class="comment-text-area">
-											<strong>Mitin</strong> Donec sed odio dui. Nullam quis risus eget urna mollis ornare vel eu leo. Cum sociis natoque
-											penatibus et magnis dis parturient montes, nascetur ridiculus mus.
-											<div class="q-side-text">13 hr</div>
-										</div>
-									</div>
-
-									<div class="media">
-										<div class="d-flex align-self-start mr-3 comment-thumnbnail-img"></div>
-										<div class="comment-text-area">
-											<div class="view-more-comments">View more comments</div>
-										</div>
-									</div>
-								</div>
-							</div>
-							<div class="carousel-item">
-								<div class="row comment-area">
-									<div>
-										<strong>No</strong> <a href="#"><span class="q-side-text">1,412,121</span> </a>
-									</div>
-									<div class="media">
-										<a href=""><img class="d-flex align-self-start mr-3 comment-thumnbnail-img" src="pp.png" alt="Abhishek"></a>
-										<div class="comment-text-area">
-											<strong>Mitin<span> (No)</span></strong> Donec sed odio dui. Nullam quis risus eget urna mollis ornare vel eu
-											leo. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.
-											<div class="q-side-text">13 hr .
-												<div class="anchor" id="likeBtn">Like</div>
-											</div>
-										</div>
-									</div>
-
-
-									<div class="media">
-										<a href=""><img class="d-flex align-self-start mr-3 comment-thumnbnail-img" src="pp.png" alt="Abhishek"></a>
-										<div class="comment-text-area">
-											<strong>Mitin</strong> Donec sed odio dui. Nullam quis risus eget urna mollis ornare vel eu leo. Cum sociis natoque
-
-											<div class="q-side-text">13 hr</div>
-										</div>
-									</div>
-
-
-									<div class="media">
-										<a href=""><img class="d-flex align-self-start mr-3 comment-thumnbnail-img" src="pp.png" alt="Abhishek"></a>
-										<div class="comment-text-area">
-											<strong>Mitin</strong> Donec sed odio dui.s.
-											<div class="q-side-text">13 hr</div>
-										</div>
-									</div>
-
-									<div class="media">
-										<a href=""><img class="d-flex align-self-start mr-3 comment-thumnbnail-img" src="pp.png" alt="Abhishek"></a>
-										<div class="comment-text-area">
-											<strong>Mitin</strong> Donec sed odio dui. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur
-											ridiculus mus.
-											<div class="q-side-text">13 hr</div>
-										</div>
-									</div>
-									<div class="media">
-										<a href=""><img class="d-flex align-self-start mr-3 comment-thumnbnail-img" src="pp.png" alt="Abhishek"></a>
-										<div class="comment-text-area">
-											<strong>Mitin</strong> Donec sed odio dui. Nullam quis risus eget urna mollis ornare vel eu leo. Cum sociis natoque
-											penatibus et magnis dis parturient montes, nascetur ridiculus mus.
-											<div class="q-side-text">13 hr</div>
-										</div>
-									</div>
-
-									<div class="media">
-										<div class="d-flex align-self-start mr-3 comment-thumnbnail-img"></div>
-										<div class="comment-text-area">
-											<div class="view-more-comments">View more comments</div>
-										</div>
-									</div>
-
-
-								</div>
-
-							</div>
-							<div class="carousel-item">
-								<div class="row comment-area">
-									<div>
-										<strong>Maybe</strong> <a href="#"><span class="q-side-text">1,412,121</span> </a>
-									</div>
-									<div class="media">
-										<a href=""><img class="d-flex align-self-start mr-3 comment-thumnbnail-img" src="pp.png" alt="Abhishek"></a>
-										<div class="comment-text-area">
-											<strong>Mitin<span> (Maybe)</span></strong> Donec sed odio dui. Nullam quis risus eget urna mollis ornare vel
-											eu leo. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.
-											<div class="q-side-text">13 hr .
-												<div class="anchor" id="likeBtn">Like</div>
-											</div>
-										</div>
-									</div>
-
-
-									<div class="media">
-										<a href=""><img class="d-flex align-self-start mr-3 comment-thumnbnail-img" src="pp.png" alt="Abhishek"></a>
-										<div class="comment-text-area">
-											<strong>Mitin</strong> Donec sed odio dui. Nullam quis risus eget urna mollis ornare vel eu leo. Cum sociis natoque
-
-											<div class="q-side-text">13 hr</div>
-										</div>
-									</div>
-
-
-									<div class="media">
-										<a href=""><img class="d-flex align-self-start mr-3 comment-thumnbnail-img" src="pp.png" alt="Abhishek"></a>
-										<div class="comment-text-area">
-											<strong>Mitin</strong> Donec sed odio dui.s.
-											<div class="q-side-text">13 hr</div>
-										</div>
-									</div>
-
-									<div class="media">
-										<a href=""><img class="d-flex align-self-start mr-3 comment-thumnbnail-img" src="pp.png" alt="Abhishek"></a>
-										<div class="comment-text-area">
-											<strong>Mitin</strong> Donec sed odio dui. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur
-											ridiculus mus.
-											<div class="q-side-text">13 hr</div>
-										</div>
-									</div>
-									<div class="media">
-										<a href=""><img class="d-flex align-self-start mr-3 comment-thumnbnail-img" src="pp.png" alt="Abhishek"></a>
-										<div class="comment-text-area">
-											<strong>Mitin</strong> Donec sed odio dui. Nullam quis risus eget urna mollis ornare vel eu leo. Cum sociis natoque
-											penatibus et magnis dis parturient montes, nascetur ridiculus mus.
-											<div class="q-side-text">13 hr</div>
-										</div>
-									</div>
-
-									<div class="media">
-										<div class="d-flex align-self-start mr-3 comment-thumnbnail-img"></div>
-										<div class="comment-text-area">
-											<div class="view-more-comments">View more comments</div>
-										</div>
-									</div>
-
-
-								</div>
-
-							</div>
-						</div>
-					</div>
-				</div>
 				<!-- Nav tabs -->
 
 			</div>
@@ -630,7 +397,7 @@
 		<div class="modal-dialog" role="document">
 			<div class="modal-content">
 				<div class="modal-header">
-					<h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+					<h5 class="modal-title" id="exampleModalLabel">Create your poll here </h5>
 					<button type="button" class="close" data-dismiss="modal" aria-label="Close">
 										<span aria-hidden="true">&times;</span>
 										</button>
@@ -638,24 +405,16 @@
 				<div class="modal-body">
 					<form id="registerform" role="form">
 						<div class="form-group">
-							<input type="text" name="question" id="ques" class="form-control input-lg" placeholder="Question" tabindex="3">
+							<h1>Question</h1>
+							<input type="text" class="form-control" name="ques" placeholder="Question" id="ques">
 						</div>
 						<div class="form-group">
+							<h1>Description</h1>
 							<textarea type="text" name="description" rows="2" id="desc" class="form-control input-lg" placeholder="Desription" tabindex="4"></textarea>
 						</div>
 						<div class="row">
-							<!--<div class="col-xs-12 col-sm-6 col-md-6">
-								<div class="form-group">
-									<select value='1' class="form-control" name="categorySelect" aria-placeholder="category" id="categorySelect">
-									<option>--Select Category--</option>
-									<option>Entertainment</option>
-									<option>School</option>
-									<option>Public</option>
-								  </select>
-								</div>
-							</div>-->
 							<div class="col-md-12">
-								<strong>Options</strong>
+								<h1>Options</h1>
 								<ul id='option-gen-list' style="list-style: none;padding-left:0px;margin-bottom: 0px;">
 
 								</ul>
@@ -672,6 +431,7 @@
 					<button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
 					<button type="button" class="btn btn-primary">Submit</button>
 				</div>
+
 			</div>
 		</div>
 	</div>
@@ -703,6 +463,12 @@
 					);
 				});
 
+				$(".modal").on("hidden.bs.modal", function () {
+					$("#ques").html("");
+					$("#desc").html("");
+					$("#option-gen-list").html("");
+				});
+
 
 				$("#option-gen-list").on("click", "i.fa-close", function () {
 					$(this).closest('li').remove();
@@ -711,14 +477,23 @@
 				$('.save-comment').click(function (e) {
 
 					var comment = $(this).closest('.comment-text-area').find('.comment-box').val();
-					console.log(comment);
-					$(this).val("");
+					if (comment == "") return;
+					$(this).closest('.comment-area').find('.comments-list').prepend("<li>"
+						+ "<div class='media'>"
+						+ "<a href=''><img class='d-flex align-self-start mr-3 comment-thumnbnail-img' src='pp.png' alt='Abhishek'></a>"
+						+ "<div class='comment-text-area'>"
+						+ "		<strong>Mitin</strong> " + comment
+						+ "    	<div class='q-side-text'>13 hr</div>"
+						+ "</div>"
+						+ "</div></li>");
+					$(this).closest('.comment-text-area').find('.comment-box').val("")
 					// save the comment to the this quesion 
 				});
 
 				$('.comment-box').keypress(function (e) {
 					if (e.keyCode == 13) {
 						var cmt = $(this).val();
+						if (cmt == "") return;
 
 						$(this).closest('.comment-area').find('.comments-list').prepend("<li>"
 							+ "<div class='media'>"
