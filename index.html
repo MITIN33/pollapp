@@ -113,7 +113,7 @@
 									<li class="list-inline-item">
 										<div class="input-group margin-bottom-sm option">
 											<span class="input-group-addon"><i class="fa fa-plus" aria-hidden="true"></i></span>
-											<div class="form-control" data-target="#commentSectionId1" data-slide-to="0" id="option1" type="button">Yes</div>
+											<div class="form-control" data-target="#commentSectionId1" data-slide-to="0" type="button">Yes</div>
 											</textarea>
 
 										</div>
@@ -167,13 +167,15 @@
 											<div class="media">
 												<a href=""><img class="d-flex align-self-start mr-3 comment-thumnbnail-img" src="pp.png" alt="Abhishek"></a>
 												<div class="comment-text-area">
-													<strong>Mitin</strong> Donec sed odio dui. Nullam quis risus eget urna mollis ornare vel eu leo. Cum sociis
-													natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.
-													<div class="q-side-text">13 hr .
-														<div class="anchor" id="likeBtn">Like</div>.
-														<span class="q-side-text" id="like-count">12</span>
-														<i class="fa fa-close edit-btn" aria-hidden="true"></i>
-														<i class="fa fa-edit edit-btn" aria-hidden="true"></i>
+													<div class="text-area">
+														<strong>Mitin</strong> <span> Donec sed odio dui. Nullam quis risus eget urna mollis ornare vel eu leo. Cum sociis
+													natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</span>
+														<div class="q-side-text">13 hr .
+															<div class="anchor" id="likeBtn">Like</div>.
+															<span class="q-side-text" id="like-count">12</span>
+															<i class="fa fa-close edit-btn" aria-hidden="true"></i>
+															<i class="fa fa-edit edit-btn" aria-hidden="true"></i>
+														</div>
 													</div>
 												</div>
 											</div>
@@ -182,9 +184,16 @@
 											<div class="media">
 												<a href=""><img class="d-flex align-self-start mr-3 comment-thumnbnail-img" src="pp.png" alt="Abhishek"></a>
 												<div class="comment-text-area">
-													<strong>Mitin</strong> Donec sed odio dui. Nullam quis risus eget urna mollis ornare vel eu leo. Cum sociis
-													natoque
-													<div class="q-side-text">13 hr</div>
+													<div class="text-area">
+														<strong>Mitin</strong><span> Donec sed odio dui. Nullam quis risus eget urna mollis ornare vel eu leo. Cum sociis
+													natoque</span>
+														<div class="q-side-text">13 hr
+															<div class="anchor" id="likeBtn">Like</div>.
+															<span class="q-side-text" id="like-count">12</span>
+															<i class="fa fa-close edit-btn" aria-hidden="true"></i>
+															<i class="fa fa-edit edit-btn" aria-hidden="true"></i>
+														</div>
+													</div>
 												</div>
 											</div>
 										</li>
@@ -454,73 +463,6 @@
 		<script>
 			$(document).ready(function () {
 
-
-				$('.comment-toggle').click(function () {
-					var div = $(this).closest('.question-area').find('.carousel-inner');
-					div.toggle();
-				});
-
-				$('#add-option').click(function () {
-					var op = $(this).closest('.form-group').find('input').val();
-					var div = $('#option-gen-list').append(
-						"<li><div class='input-group form-group margin-bottom-sm'> <input disabled class='form-control' name='Email' type='text' placeholder='Option' value='" + op + "' ><span id='add-option' class='input-group-addon'><i id='close-btn' class='fa fa-close' aria-hidden='true'></i></span></div></li>"
-					);
-				});
-
-				$(".modal").on("hidden.bs.modal", function () {
-					$("#ques").html("");
-					$("#desc").html("");
-					$("#option-gen-list").html("");
-				});
-
-
-				$("#option-gen-list").on("click", "i.fa-close", function () {
-					$(this).closest('li').remove();
-				});
-
-				$('.save-comment').click(function (e) {
-
-					var comment = $(this).closest('.comment-text-area').find('.comment-box').val();
-					if (comment == "") return;
-					$(this).closest('.comment-area').find('.comments-list').prepend("<li>"
-						+ "<div class='media'>"
-						+ "<a href=''><img class='d-flex align-self-start mr-3 comment-thumnbnail-img' src='pp.png' alt='Abhishek'></a>"
-						+ "<div class='comment-text-area'>"
-						+ "		<strong>Mitin</strong> " + comment
-						+ "    	<div class='q-side-text'>13 hr</div>"
-						+ "</div>"
-						+ "</div></li>");
-					$(this).closest('.comment-text-area').find('.comment-box').val("")
-					// save the comment to the this quesion 
-				});
-
-				$('.comment-box').keypress(function (e) {
-					if (e.keyCode == 13) {
-						var cmt = $(this).val();
-						if (cmt == "") return;
-
-						$(this).closest('.comment-area').find('.comments-list').prepend("<li>"
-							+ "<div class='media'>"
-							+ "<a href=''><img class='d-flex align-self-start mr-3 comment-thumnbnail-img' src='pp.png' alt='Abhishek'></a>"
-							+ "<div class='comment-text-area'>"
-							+ "		<strong>Mitin</strong> " + cmt
-							+ "    	<div class='q-side-text'>13 hr</div>"
-							+ "</div>"
-							+ "</div></li>");
-						$(this).val("");
-					}
-				});
-
-
-				$('[data-toggle="popover"]').popover()
-				$('#likeBtn').click(function () {
-					if ($(this).text() == 'Like') {
-						$('#likeBtn').html('Unlike');
-					}
-					else {
-						$(this).html('Like');
-					}
-				});
 
 			})
 		</script>

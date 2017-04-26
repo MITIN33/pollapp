@@ -44,7 +44,7 @@ nav a{
 }
 
 #searchBox{
-   
+   width: 100%;
 }
 
 .sticky-top-custom{
@@ -306,11 +306,10 @@ h1:before {
 .tt-input, /* UPDATE: newer versions use tt-input instead of tt-query */
 .tt-hint {
     width:100%;
-    height: 40px;
+    height: 35px;
     padding: 8px 12px;
     font-size: 20px;
     line-height: 25px;
-    border: 2px solid #ccc;
   
 }
 
@@ -331,6 +330,10 @@ h1:before {
     border: 1px solid rgba(0, 0, 0, 0.2);
     border-radius: 8px;
     box-shadow: 0 5px 10px rgba(0,0,0,.2);
+}
+
+.twitter-typeahead{
+    display: block!important;
 }
 
 .tt-suggestion {

@@ -35,8 +35,7 @@ $(function () {
         minLength: 1
     },
         {
-            name: 'states',
-            source:substringMatcher(ques),
+            source: substringMatcher(ques),
             templates: {
                 empty: [
                     "<div ><a href='#' style='color:black;margin-left:5px;'>",
@@ -49,4 +48,131 @@ $(function () {
             }
         }
     );
+
+    //------------------------Code from index page-----------------------------------------
+
+    var previousComment = '';
+
+    $('.comment-toggle').click(function () {
+        var div = $(this).closest('.question-area').find('.carousel-inner');
+        div.toggle();
+    });
+
+
+    //Modal Related Script
+    $('#add-option').click(function () {
+        var op = $(this).closest('.form-group').find('input').val();
+        var div = $('#option-gen-list').append(
+            "<li><div class='input-group form-group margin-bottom-sm'> <input disabled class='form-control' name='Email' type='text' placeholder='Option' value='" + op + "' ><span id='add-option' class='input-group-addon'><i id='close-btn' class='fa fa-close' aria-hidden='true'></i></span></div></li>"
+        );
+    });
+
+    $(".modal").on("hidden.bs.modal", function () {
+        $("#ques").html("");
+        $("#desc").html("");
+        $("#option-gen-list").html("");
+    });
+
+
+    $("#option-gen-list").on("click", "i.fa-close", function () {
+        $(this).closest('li').remove();
+    });
+
+
+    //--Comment Edit Save login----
+
+    $('.q-side-text').on('click', '.fa-edit', (function () {
+
+        var cmt = $(this).closest('.comment-text-area').find('span').first().html();
+        var parentDiv = $(this).closest('.comment-text-area');
+        previousComment = $(this).closest('.comment-text-area').html();
+        parentDiv.find('.text-area').hide();
+
+        var htmlcontent = [
+            "<div class='edit-comment'>",
+            "<textarea type='text' name='' class='comment-box' rows='1' placeholder='comment'>" + cmt + "</textarea>",
+            "<div class='q-side-text'>",
+            "<div id='cancelBtn' class='anchor cancel-comment'> Cancel</div>",
+            "<div class='anchor save-comment'> Save</div>",
+            "</div>",
+            "</div>"
+        ].join('\n');
+
+        $(this).closest('.comment-text-area').append(htmlcontent);
+
+        console.log(parentDiv);
+
+        parentDiv.on('click', '.cancel-comment', function () {
+            parentDiv.find('.edit-comment').remove();
+            parentDiv.find('.text-area').show();
+        });
+
+
+        parentDiv.on('click', '.save-comment', function () {
+            var textareactrl = parentDiv.find('.edit-comment').find('textarea');
+            var newCmt = textareactrl.val();
+            console.log(newCmt);
+            parentDiv.find('.edit-comment').remove();
+            parentDiv.find('.text-area').show();
+            parentDiv.find('.text-area').find('span').first().html(newCmt);
+
+        });
+
+    }));
+
+    $('.q-side-text').on('click', '.fa-close',(function () {
+        $(this).closest('li').remove();
+    }));
+
+
+
+    //-------Save new comment Logic---------
+
+    $('.save-comment').click(function (e) {
+
+        var comment = $(this).closest('.comment-text-area').find('.comment-box').val();
+        if (comment == "") return;
+        $(this).closest('.comment-area').find('.comments-list').prepend("<li>"
+            + "<div class='media'>"
+            + "<a href=''><img class='d-flex align-self-start mr-3 comment-thumnbnail-img' src='pp.png' alt='Abhishek'></a>"
+            + "<div class='comment-text-area'>"
+            + "		<strong>Mitin</strong> " + comment
+            + "    	<div class='q-side-text'>13 hr</div>"
+            + "</div>"
+            + "</div></li>");
+        $(this).closest('.comment-text-area').find('.comment-box').val("")
+        // save the comment to the this quesion 
+    });
+
+    $('.comment-box').keypress(function (e) {
+        if (e.keyCode == 13) {
+            var cmt = $(this).val();
+            if (cmt == "") return;
+
+            $(this).closest('.comment-area').find('.comments-list').prepend("<li>"
+                + "<div class='media'>"
+                + "<a href=''><img class='d-flex align-self-start mr-3 comment-thumnbnail-img' src='pp.png' alt='Abhishek'></a>"
+                + "<div class='comment-text-area'>"
+                + "		<strong>Mitin</strong> " + cmt
+                + "    	<div class='q-side-text'>13 hr</div>"
+                + "</div>"
+                + "</div></li>");
+            $(this).val("");
+        }
+    });
+
+
+
+
+    $('#likeBtn').click(function () {
+        if ($(this).text() == 'Like') {
+            $('#likeBtn').html('Unlike');
+        }
+        else {
+            $(this).html('Like');
+        }
+    });
+
+
+
 });
