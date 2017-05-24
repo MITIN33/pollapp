@@ -1,0 +1,502 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>My Poll - You Opinion matter</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ"
+        crossorigin="anonymous">
+    <link href="css/style.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href='https://fonts.googleapis.com/css?family=Acme' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Asap' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Cairo' rel='stylesheet' type='text/css'>
+</head>
+
+<body style="background-color: white">
+    <nav class="navbar navbar-toggleable-md fixed-top" style="background-color:#3c763d!important">
+        <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+			<span class="navbar-toggler-icon"></span>
+			<span class="navbar-toggler-icon"></span>
+			<span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="container">
+            <a class="navbar-brand" href="index.html">Navbar</a>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+
+                <form class="form-inline my-2 my-lg-0 mr-auto">
+                    <input class="form-control mr-sm-2 input-group-lg typeahead" type="text" id="searchBox" placeholder="Search">
+                    <button id="createBtn" class="btn btn-outline-success my-2 my-sm-0" type="button" data-toggle="modal" data-target="#emyModal">Create Poll</button>
+                </form>
+
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="profile.html">Profile</a>
+                    </li>
+                </ul>
+
+                <div class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="http://example.com" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true"
+                        aria-expanded="false"><i class="fa fa-user-circle" aria-hidden="true"></i>&nbsp;Mitin</a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                        <a class="dropdown-item" href="#"><i class="fa fa-user-circle" aria-hidden="true"></i> &nbsp;Account</a>
+                        <a class="dropdown-item" href="#"><i class="fa fa-cog" aria-hidden="true"></i> &nbsp;Settings</a>
+                        <a class="dropdown-item" href="#"><i class="fa fa-comment-o" aria-hidden="true"></i> &nbsp;Feedback</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="#"><i class="fa fa-sign-out" aria-hidden="true"></i>&nbsp;Logout</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-md-3 offset-md-1">
+                <div class="box">
+                    <div>
+                        <img class="partition" src="pp.png" style="max-width: 80%" alt="">
+                        <div class=""></div>
+                        </img>
+                        <h5 style="font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;margin-bottom:10px;">GROUPS</h5>
+                        <ul style="list-style: none;padding-left: 0px">
+                            <li><a class="lead-1" href="#">MMMEC</a></li>
+                            <li><a class="lead-1" href="#">Web App</a></li>
+                            <li><a class="lead-1" href="#">Microsoft</a></li>
+                        </ul>
+                        <div class="partition-small"></div>
+                        <h5 style="font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;margin-bottom:10px;">PEOPLE</h5>
+                        <ul style="list-style: none;padding-left: 0px">
+                            <li><a class="lead-1" href="#">Mitin</a></li>
+                            <li><a class="lead-1" href="#">Sucheta</a></li>
+                            <li><a class="lead-1" href="#">Akash</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-7">
+                <div class="box">
+                    <div class="profile-header">
+                        <div>
+                            <div id='pf-name' style="font-size: 30px;font-weight: bold">Mitin Dixit
+                                <a name="" id="" class="btn btn-secondary" href="#" role="button"><i class="fa fa-feed" aria-hidden="true"></i> Follow</a>
+
+                            </div>
+                            <p class="lead-2">
+                                <i class="fa fa-at" aria-hidden="true"></i> Works At Microsoft
+
+                            </p>
+                            <p>
+                                <i class="fa fa-map-marker" aria-hidden="true"></i> Banagalore
+                            </p>
+                            <span>
+                             <i class="fa fa-star-half-empty" aria-hidden="true"></i>   Rating
+                            </span>
+                            <div style="margin-top: 10px;">
+                                <a name="" id="" class="btn btn-secondary" href="#" role="button">Followers (26)</a>
+                                <a name="" id="" class="btn btn-secondary" href="#" role="button">Following (106)</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="portlet">
+                        <div class="portlet-title">
+                            <!-- Nav tabs -->
+                            <ul class="nav nav-tabs" id="navId">
+                                <li class="nav-item">
+                                    <a href="#tab1Id" class="nav-link active"><i class="fa fa-eye" aria-hidden="true"></i> Timeline</a>
+                                </li>
+                                <li class="nav-item dropdown">
+                                    <a href="#tab2Id" class="nav-link"><i class="fa fa-user" aria-hidden="true"></i> Profile</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <!-- Tab panes -->
+                    <div class="tab-content">
+                        <div class="tab-pane fadein active" id="tab1Id" role="tabpanel">
+                            <div class="col-md-10 pl-0">
+                                <div id="question1" style="border:0px;" class="question-area">
+                                    <div class="question">
+                                        <div class="media">
+                                            <div class="media-body">
+                                                <div class="user-title"><a href="#">Abhishek </a></div>
+                                                <div class="q-side-text">3 April 5:40 PM</div>
+                                                <h5 class="q-title">Is Yogi Aditya right Candidate for CM ?</h5>
+                                                <p class="description">
+                                                    Donec sed odio dui. Nullam quis risus eget urna mollis ornare vel eu leo. Cum sociis natoque penatibus et magnis dis parturient
+                                                    montes, nascetur ridiculus mus.
+                                                </p>
+
+                                                <ul class="list-inline options-list">
+                                                    <li class="list-inline-item">
+                                                        <div class="input-group margin-bottom-sm option" data-target="#commentSectionId1" data-slide-to="0">
+                                                            <span id="12345" class="input-group-addon"><i class="fa fa-plus" aria-hidden="true"></i></span>
+                                                            <input class="form-control" type="button" value="Yes">
+                                                        </div>
+                                                        </br>
+                                                        <div class="count">1,400,987</div>
+
+                                                    </li>
+                                                    <li class="list-inline-item">
+                                                        <div class="input-group margin-bottom-sm option" data-target="#commentSectionId1" data-slide-to="1">
+                                                            <span class="input-group-addon"><i class="fa fa-plus" aria-hidden="true"></i></i></span>
+                                                            <input class="form-control" type="button" value="No">
+                                                        </div>
+                                                        </br>
+                                                        <div class="count">1.5k</div>
+                                                    </li>
+                                                    <li class="list-inline-item">
+                                                        <div class="input-group margin-bottom-sm option" data-target="#commentSectionId1" data-slide-to="2">
+                                                            <span class="input-group-addon"><i class="fa fa-plus" aria-hidden="true"></i></i></span>
+                                                            <input class="form-control" type="button" value="Maybe">
+                                                        </div>
+                                                        </br>
+                                                        <div class="count">145k</div>
+                                                    </li>
+                                                    <div class="cairo comment-toggle"><i class="fa fa-commenting" aria-hidden="true"></i>comments</div>
+                                                </ul>
+
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div id="commentSectionId1" class="carousel" data-ride="carousel" data-interval="false">
+                                        <div class="carousel-inner" role="listbox">
+
+                                            <div class="carousel-item active">
+                                                <div class="row comment-area">
+                                                    <div>
+                                                        <strong>Yes</strong> <a href="#"><span class="q-side-text">1,412,121</span> </a>
+                                                    </div>
+                                                    <div class="media">
+                                                        <a href=""><img class="d-flex align-self-start mr-3 comment-thumnbnail-img"
+                                                                src="pp.png" alt="Abhishek"></a>
+                                                        <div class="comment-text-area">
+                                                            <textarea type="text" name="" class="comment-box" rows="1" placeholder="comment"></textarea>
+                                                            <div class="q-side-text">
+                                                                <div href="" class="anchor cancel-comment">Cancel</div>
+                                                                <div href="#" class="anchor save-comment">Save</div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <ul class="comments-list">
+                                                        <li>
+                                                            <div class="media">
+                                                                <a href=""><img class="d-flex align-self-start mr-3 comment-thumnbnail-img"
+                                                                        src="pp.png" alt="Abhishek"></a>
+                                                                <div class="comment-text-area">
+                                                                    <div class="text-area">
+                                                                        <strong>Mitin</strong> <span> Donec sed odio dui. Nullam quis risus eget urna mollis ornare vel eu leo. Cum sociis
+													natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</span>
+                                                                        <div class="q-side-text">13 hr .
+                                                                            <div class="anchor" id="likeBtn">Like</div>.
+                                                                            <span class="q-side-text" id="like-count">12</span>
+                                                                            <i class="fa fa-close edit-btn" aria-hidden="true"></i>
+                                                                            <i class="fa fa-edit edit-btn" aria-hidden="true"></i>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </li>
+                                                        <li>
+                                                            <div class="media">
+                                                                <a href=""><img class="d-flex align-self-start mr-3 comment-thumnbnail-img"
+                                                                        src="pp.png" alt="Abhishek"></a>
+                                                                <div class="comment-text-area">
+                                                                    <div class="text-area">
+                                                                        <strong>Mitin</strong><span> Donec sed odio dui. Nullam quis risus eget urna mollis ornare vel eu leo. Cum sociis
+													natoque</span>
+                                                                        <div class="q-side-text">13 hr
+                                                                            <div class="anchor" id="likeBtn">Like</div>.
+                                                                            <span class="q-side-text" id="like-count">12</span>
+                                                                            <i class="fa fa-close edit-btn" aria-hidden="true"></i>
+                                                                            <i class="fa fa-edit edit-btn" aria-hidden="true"></i>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </li>
+                                                        <li>
+                                                            <div class="media">
+                                                                <a href=""><img class="d-flex align-self-start mr-3 comment-thumnbnail-img"
+                                                                        src="pp.png" alt="Abhishek"></a>
+                                                                <div class="comment-text-area">
+                                                                    <strong>Mitin</strong> Donec sed odio dui.s.
+                                                                    <div class="q-side-text">13 hr</div>
+                                                                </div>
+                                                            </div>
+                                                        </li>
+                                                        <li>
+                                                            <div class="media">
+                                                                <a href=""><img class="d-flex align-self-start mr-3 comment-thumnbnail-img"
+                                                                        src="pp.png" alt="Abhishek"></a>
+                                                                <div class="comment-text-area">
+                                                                    <strong>Mitin</strong> Donec sed odio dui. Cum sociis
+                                                                    natoque penatibus et magnis dis parturient montes, nascetur
+                                                                    ridiculus mus.
+                                                                    <div class="q-side-text">13 hr</div>
+                                                                </div>
+                                                            </div>
+                                                        </li>
+                                                        <li>
+                                                            <div class="media">
+                                                                <a href=""><img class="d-flex align-self-start mr-3 comment-thumnbnail-img"
+                                                                        src="pp.png" alt="Abhishek"></a>
+                                                                <div class="comment-text-area">
+                                                                    <strong>Mitin</strong> Donec sed odio dui. Nullam quis
+                                                                    risus eget urna mollis ornare vel eu leo. Cum sociis
+                                                                    natoque penatibus et magnis dis parturient montes, nascetur
+                                                                    ridiculus mus.
+                                                                    <div class="q-side-text">13 hr</div>
+                                                                    <div class="view-more-comments anchor">View more comments</div>
+
+                                                                </div>
+                                                            </div>
+
+                                                        </li>
+                                                    </ul>
+                                                </div>
+
+                                            </div>
+                                            <div class="carousel-item">
+                                                <div class="row comment-area">
+                                                    <div>
+                                                        <strong>NO</strong> <a href="#"><span class="q-side-text">1,412,121</span> </a>
+                                                    </div>
+                                                    <div class="media">
+                                                        <a href=""><img class="d-flex align-self-start mr-3 comment-thumnbnail-img"
+                                                                src="pp.png" alt="Abhishek"></a>
+                                                        <div class="comment-text-area">
+                                                            <input type="text" name="" class="comment-box" placeholder="comment">
+                                                            <div class="q-side-text">
+                                                                <div href="" class="anchor cancel-comment">Cancel</div>
+                                                                <div href="#" class="anchor save-comment">Save</div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <ul class="comments-list">
+                                                        <li>
+                                                            <div class="media">
+                                                                <a href=""><img class="d-flex align-self-start mr-3 comment-thumnbnail-img"
+                                                                        src="pp.png" alt="Abhishek"></a>
+                                                                <div class="comment-text-area">
+                                                                    <strong>Mitin</strong> Donec sed odio dui. Nullam quis
+                                                                    risus eget urna mollis ornare vel eu leo. Cum sociis
+                                                                    natoque penatibus et magnis dis parturient montes, nascetur
+                                                                    ridiculus mus.
+                                                                    <div class="q-side-text">13 hr .
+                                                                        <div class="anchor" id="likeBtn">Like</div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </li>
+                                                        <li>
+                                                            <div class="media">
+                                                                <a href=""><img class="d-flex align-self-start mr-3 comment-thumnbnail-img"
+                                                                        src="pp.png" alt="Abhishek"></a>
+                                                                <div class="comment-text-area">
+                                                                    <strong>Mitin</strong> Donec sed odio dui. Nullam quis
+                                                                    risus eget urna mollis ornare vel eu leo. Cum sociis
+                                                                    natoque
+                                                                    <div class="q-side-text">13 hr</div>
+                                                                </div>
+                                                            </div>
+                                                        </li>
+                                                        <li>
+                                                            <div class="media">
+                                                                <a href=""><img class="d-flex align-self-start mr-3 comment-thumnbnail-img"
+                                                                        src="pp.png" alt="Abhishek"></a>
+                                                                <div class="comment-text-area">
+                                                                    <strong>Mitin</strong> Donec sed odio dui.s.
+                                                                    <div class="q-side-text">13 hr</div>
+                                                                </div>
+                                                            </div>
+                                                        </li>
+                                                        <li>
+                                                            <div class="media">
+                                                                <a href=""><img class="d-flex align-self-start mr-3 comment-thumnbnail-img"
+                                                                        src="pp.png" alt="Abhishek"></a>
+                                                                <div class="comment-text-area">
+                                                                    <strong>Mitin</strong> Donec sed odio dui. Cum sociis
+                                                                    natoque penatibus et magnis dis parturient montes, nascetur
+                                                                    ridiculus mus.
+                                                                    <div class="q-side-text">13 hr</div>
+                                                                </div>
+                                                            </div>
+                                                        </li>
+                                                        <li>
+                                                            <div class="media">
+                                                                <a href=""><img class="d-flex align-self-start mr-3 comment-thumnbnail-img"
+                                                                        src="pp.png" alt="Abhishek"></a>
+                                                                <div class="comment-text-area">
+                                                                    <strong>Mitin</strong> Donec sed odio dui. Nullam quis
+                                                                    risus eget urna mollis ornare vel eu leo. Cum sociis
+                                                                    natoque penatibus et magnis dis parturient montes, nascetur
+                                                                    ridiculus mus.
+                                                                    <div class="q-side-text">13 hr</div>
+                                                                    <div class="view-more-comments anchor">View more comments</div>
+
+                                                                </div>
+                                                            </div>
+
+                                                        </li>
+                                                    </ul>
+                                                </div>
+
+                                            </div>
+                                            <div class="carousel-item">
+                                                <div class="row comment-area">
+                                                    <div>
+                                                        <strong>Maybe</strong> <a href="#"><span class="q-side-text">1,412,121</span> </a>
+                                                    </div>
+                                                    <div class="media">
+                                                        <a href=""><img class="d-flex align-self-start mr-3 comment-thumnbnail-img"
+                                                                src="pp.png" alt="Abhishek"></a>
+                                                        <div class="comment-text-area">
+                                                            <div><input type="text" name="" class="comment-box" placeholder="comment"></div>
+                                                            <div class="q-side-text">
+                                                                <div href="" class="anchor cancel-comment">Cancel</div>
+                                                                <div href="#" class="anchor save-comment">Save</div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <ul class="comments-list">
+                                                        <li>
+                                                            <div class="media">
+                                                                <a href=""><img class="d-flex align-self-start mr-3 comment-thumnbnail-img"
+                                                                        src="pp.png" alt="Abhishek"></a>
+                                                                <div class="comment-text-area">
+                                                                    <strong>Mitin</strong> Donec sed odio dui. Nullam quis
+                                                                    risus eget urna mollis ornare vel eu leo. Cum sociis
+                                                                    natoque penatibus et magnis dis parturient montes, nascetur
+                                                                    ridiculus mus.
+                                                                    <div class="q-side-text">13 hr .
+                                                                        <div class="anchor" id="likeBtn">Like</div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </li>
+                                                        <li>
+                                                            <div class="media">
+                                                                <a href=""><img class="d-flex align-self-start mr-3 comment-thumnbnail-img"
+                                                                        src="pp.png" alt="Abhishek"></a>
+                                                                <div class="comment-text-area">
+                                                                    <strong>Mitin</strong> Donec sed odio dui. Nullam quis
+                                                                    risus eget urna mollis ornare vel eu leo. Cum sociis
+                                                                    natoque
+                                                                    <div class="q-side-text">13 hr</div>
+                                                                </div>
+                                                            </div>
+                                                        </li>
+                                                        <li>
+                                                            <div class="media">
+                                                                <a href=""><img class="d-flex align-self-start mr-3 comment-thumnbnail-img"
+                                                                        src="pp.png" alt="Abhishek"></a>
+                                                                <div class="comment-text-area">
+                                                                    <strong>Mitin</strong> Donec sed odio dui.s
+                                                                    <div class="q-side-text">13 hr</div>
+                                                                </div>
+
+                                                            </div>
+                                                        </li>
+                                                        <li>
+                                                            <div class="media">
+                                                                <a href=""><img class="d-flex align-self-start mr-3 comment-thumnbnail-img"
+                                                                        src="pp.png" alt="Abhishek"></a>
+                                                                <div class="comment-text-area">
+                                                                    <strong>Mitin</strong> Donec sed odio dui. Cum sociis
+                                                                    natoque penatibus et magnis dis parturient montes, nascetur
+                                                                    ridiculus mus.
+                                                                    <div class="q-side-text">13 hr</div>
+                                                                </div>
+                                                            </div>
+                                                        </li>
+                                                        <li>
+                                                            <div class="media">
+                                                                <a href=""><img class="d-flex align-self-start mr-3 comment-thumnbnail-img"
+                                                                        src="pp.png" alt="Abhishek"></a>
+                                                                <div class="comment-text-area">
+                                                                    <strong>Mitin</strong> Donec sed odio dui. Nullam quis
+                                                                    risus eget urna mollis ornare vel eu leo. Cum sociis
+                                                                    natoque penatibus et magnis dis parturient montes, nascetur
+                                                                    ridiculus mus.
+                                                                    <div class="q-side-text">13 hr</div>
+                                                                    <div class="view-more-comments anchor">View more comments</div>
+
+                                                                </div>
+                                                            </div>
+
+                                                        </li>
+                                                    </ul>
+                                                </div>
+
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                </div>
+
+                                
+                                <!-- Nav tabs -->
+
+                            </div>
+
+                        </div>
+                        <div class="tab-pane fade" id="tab2Id" role="tabpanel">
+                            <small class="text-muted">Personal Information
+                            <span class="text-muted pull-right anchor"><i class="fa fa-edit" aria-hidden="true"></i> Edit</span></small>
+                            <div class="partition-small"></div>
+                            <dl class="row">
+                                <dt class="col-sm-3">Description lists</dt>
+                                <dd class="col-sm-9">A description list is perfect for defining terms.</dd>
+
+                                <dt class="col-sm-3">Euismod</dt>
+                                <dd class="col-sm-9">Vestibulum id ligula porta felis euismod semper eget lacinia odio sem nec elit.</dd>
+                                <dd class="col-sm-9 offset-sm-3">Donec id elit non mi porta gravida at eget metus.</dd>
+
+                                <dt class="col-sm-3">Malesuada porta</dt>
+                                <dd class="col-sm-9">Etiam porta sem malesuada magna mollis euismod.</dd>
+
+                                <dt class="col-sm-3 text-truncate">Truncated term is truncated</dt>
+                                <dd class="col-sm-9">Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa
+                                    justo sit amet risus.</dd>
+
+                                <dt class="col-sm-3">Nesting</dt>
+                                <dd class="col-sm-9">
+                                    <dl class="row">
+                                        <dt class="col-sm-4">Nested definition list</dt>
+                                        <dd class="col-sm-8">Aenean posuere, tortor sed cursus feugiat, nunc augue blandit nunc.</dd>
+                                    </dl>
+                                </dd>
+                            </dl>
+                        </div>
+                    </div>
+
+
+
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <style>
+        /* Tab */
+    </style>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn"
+        crossorigin="anonymous"></script>
+
+    <script src="js/typeahead.bundle.js"></script>
+    <script src="js/scripts.js"></script>
+
+
+
+</body>
+
+</html>

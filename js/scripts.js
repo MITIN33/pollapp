@@ -63,7 +63,7 @@ $(function () {
     $('#add-option').click(function () {
         var op = $(this).closest('.form-group').find('input').val();
         var div = $('#option-gen-list').append(
-            "<li><div class='input-group form-group margin-bottom-sm'> <input disabled class='form-control' name='Email' type='text' placeholder='Option' value='" + op + "' ><span id='add-option' class='input-group-addon'><i id='close-btn' class='fa fa-close' aria-hidden='true'></i></span></div></li>"
+            "<li><div class='input-group form-group margin-bottom-sm'> <input disabled class='form-control' name='OptionsList' type='text' placeholder='Option' value='" + op + "' ><span id='add-option' class='input-group-addon'><i id='close-btn' class='fa fa-close' aria-hidden='true'></i></span></div></li>"
         );
     });
 
@@ -120,7 +120,7 @@ $(function () {
 
     }));
 
-    $('.q-side-text').on('click', '.fa-close',(function () {
+    $('.q-side-text').on('click', '.fa-close', (function () {
         $(this).closest('li').remove();
     }));
 
@@ -171,6 +171,82 @@ $(function () {
         else {
             $(this).html('Like');
         }
+    });
+
+    $('#reg').click(function () {
+
+        var formdata = JSON.stringify($('#questionform').serializeArray());
+        formdata = JSON.parse(formdata);
+        var data = {};
+        $.each(formdata, function (index, element) {
+            data[element.name] = element.value;
+        });
+
+        console.log(data);
+
+
+    });
+
+
+    //********************** Submit quettion call*********************/
+
+    $('.modal').on('click', '#submitForm', function () {
+
+        var formdata = JSON.stringify($('#questionForm').serializeArray());
+        formdata = JSON.parse(formdata);
+        var data = {};
+        $.each(formdata, function (index, element) {
+            data[element.name] = element.value;
+        });
+
+        var options = [];
+
+        $('#option-gen-list li').each(function (i, o) {
+            options.push($(this).find('input').val());
+        });
+
+        data['OptionsList'] = options;
+
+        console.log(data);
+        $.post("http://localhost:5408/api/Question/Create", data,
+            function (data, textStatus, jqXHR) {
+                console.log('success create question');
+            }
+        );
+
+    });
+
+
+    // Profile page script //////////
+
+    $('#navId a').click(function () {
+        $(this).tab('show');
+    });
+
+
+
+    /***********   OTPION CLICKED */
+
+    $('.option .input-group-addon').click(function () {
+
+        //TO DO ITEM TO UPDATE THE OPTIONS
+
+        var url = "";
+        var optionId = $(this).attr('id');
+        $.ajax({
+            type: "POST",
+            url: url,
+            data: { "id": optionId },
+            dataType: "json",
+            success: function (response) {
+                console.log(response);
+            }
+        });
+
+        var plusBtn = $(this).closest('.option').find('.input-group-addon');
+        $(this).closest('.options-list').find('.input-group-addon').removeClass('option-clicked');
+        plusBtn.addClass('option-clicked');
+
     });
 
 

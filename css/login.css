@@ -74,23 +74,24 @@
 	list-style-type:none;
 }
 .social-login ul li{
-	width:33%;
+	width:50%;
 	float:left;
     clear:fix;
 }
-.social-login ul li a{
+.social-login ul li button{
 	font-size:13px;
 	color:#fff;
+    width:100%;
 	text-decoration:none;
 	padding:9px 0;
 	display:block;
 }
-.social-login ul li:nth-child(1) a{
+.social-login ul li:nth-child(1) button{
 	background:#3b5998;
 }
-.social-login ul li:nth-child(2) a{
+.social-login ul li:nth-child(2) button{
 	background:#e74c3d;
 }
-.social-login ul li:nth-child(3) a{
+.social-login ul li:nth-child(3) button{
 	background:#3698d9;
 }

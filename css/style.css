@@ -44,13 +44,19 @@ nav a{
 }
 
 #searchBox{
-   width: 100%;
+    width:100%;
 }
 
 .sticky-top-custom{
     position: sticky;
     top: 60px;
     z-index: 0;
+}
+
+.raised-box{
+    box-shadow: 0 0 0 1px rgba(0,0,0,.1);
+    background-color: #fff;
+    padding: 10px;
 }
 
 #left-side-pane{
@@ -68,7 +74,7 @@ nav a{
 #left-side-pane li{
     padding: 3px 0px;
     font-size: 15px;
-    
+    font-family: 'Acme', sans-serif;
 }
 
 form label{
@@ -168,6 +174,31 @@ form label{
     margin-bottom: 0px;
 }
 
+.option{
+    display: inline-flex;
+    width: auto; 
+    cursor: pointer;
+    margin-right: 15px;
+}
+
+.option:hover{
+    box-shadow: 0 0 0 1px rgba(0,0,0,.1);
+}
+
+.input-group-addon{
+    cursor: pointer;
+}
+
+.input-group-addon:hover{
+    background-color:rgba(92, 184, 92, 0.64);
+    color: white;
+}
+
+.option-clicked{
+    background-color:rgba(92, 184, 92, 0.64);
+    color: white;
+}
+
 .comments-list{
     padding:0px;
     list-style: none;
@@ -181,10 +212,7 @@ form label{
 
 
 
-.input-group-addon:hover{
-    background-color:rgba(92, 184, 92, 0.64);
-    color: white;
-}
+
 
 .media{
     width: 100%;
@@ -245,17 +273,7 @@ form label{
     padding-top: 10px;
 }
 
-.option{
-    display: inline-flex;
-    width: auto; 
-    cursor: pointer;
-    margin-right: 15px;
-}
 
-.option:hover{
-    box-shadow: 0 0 0 1px rgba(0,0,0,.1);
-    
-}
 
 .description{
         padding-bottom: 15px;
@@ -351,3 +369,118 @@ h1:before {
 .tt-suggestion p {
     margin: 0;
 }
+
+/*********Typography **************/
+
+.lead-1{
+    font-size: .9em;
+    line-height: 1.2;
+}
+
+.lead-2{
+    font-size: 1.0em!important;
+}
+
+.lead-3{
+    font-size: 1.0em!important;
+}
+
+/*************Profile*********************/
+
+  .box {
+            /*border: 1px solid #3c763d;*/
+            height: 400px;
+        }
+        
+        .partition {
+            border-bottom: 1px solid rgba(0, 0, 0, .1);
+            padding-bottom: 20px;
+            margin-bottom: 10px;
+        }
+
+        .partition-small {
+            border-bottom: 1px solid rgba(0, 0, 0, .1);
+            margin-bottom: 10px;
+        }
+        
+        .box p {
+            margin-top: 0px;
+            margin-bottom: 5px;
+            color: rgba(0, 0, 0, .6)
+        }
+        
+        .profile-header {
+            font-family: 'Asap';
+            padding-top: 5px;
+        }
+        
+        .profile-header span {
+            font-size: 15px;
+        }
+
+           
+        .inputs {
+            display: inline-block;
+            padding: 4px 0;
+            margin-top: -10px;
+        }
+        
+        .input-inline {
+            width: 240px;
+            display: inline-block;
+            vertical-align: middle;
+        }
+        /* Portlet */
+        
+        .portlet {
+            background: #fff;
+            padding-top: 20px;
+        }
+        
+        .portlet.portlet-gray {
+            background: #f7f7f7;
+        }
+        
+        .portlet.portlet-bordered {
+            border: 1px solid #eee;
+        }
+        /* Portlet Title */
+        
+        .portlet-title {
+            padding: 0;
+            min-height: 40px;
+            border-bottom: 1px solid #eee;
+            margin-bottom: 18px;
+        }
+        
+        .portlet-title>.nav-tabs {
+            background: none;
+            margin: 0;
+            border: 0;
+        }
+        
+        .portlet-title>.nav-tabs>li {
+            background: none;
+            margin-right: 10px;
+            border: 0;
+        }
+        
+        .portlet-title>.nav-tabs>li>a {
+            background: none;
+            border: 0;
+            padding: 2px 10px 10px 0px;
+            color: #444;
+        }
+        
+        .portlet-title>.nav-tabs>li a.active,
+        .portlet-title>.nav-tabs>li a.active:hover {
+            border-bottom: 2px solid #f3565d;
+            position: relative;
+        }
+        
+        .portlet-title>.nav-tabs>li.active>a,
+        .portlet-title>.nav-tabs>li:hover>a {
+            color: #333;
+            background: #fff;
+            border: 0;
+        }
